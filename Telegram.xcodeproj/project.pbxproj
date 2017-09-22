@@ -15,6 +15,7 @@
 		07DD429D1F75397000244867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD429B1F75397000244867 /* LaunchScreen.storyboard */; };
 		07DD42A81F75397000244867 /* TelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42A71F75397000244867 /* TelegramTests.swift */; };
 		07DD42B31F75397000244867 /* TelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42B21F75397000244867 /* TelegramUITests.swift */; };
+		07EA00611F75464800C18FD8 /* firstItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00601F75464800C18FD8 /* firstItem.storyboard */; };
 		8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F18D48A1F75410600AB659F /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		07DD42AE1F75397000244867 /* TelegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DD42B21F75397000244867 /* TelegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramUITests.swift; sourceTree = "<group>"; };
 		07DD42B41F75397000244867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EA00601F75464800C18FD8 /* firstItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = firstItem.storyboard; sourceTree = "<group>"; };
 		8F18D48A1F75410600AB659F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			children = (
 				07DD428F1F75397000244867 /* AppDelegate.swift */,
 				07DD42911F75397000244867 /* ViewController.swift */,
+				07EA00601F75464800C18FD8 /* firstItem.storyboard */,
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07DD42991F75397000244867 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 			files = (
 				07DD429D1F75397000244867 /* LaunchScreen.storyboard in Resources */,
 				07DD429A1F75397000244867 /* Assets.xcassets in Resources */,
+				07EA00611F75464800C18FD8 /* firstItem.storyboard in Resources */,
 				07DD42951F75397000244867 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

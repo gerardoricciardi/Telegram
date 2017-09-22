@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MuW-8Z-LOK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,52 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="cBb-91-kTH">
+        <!--settings-->
+        <scene sceneID="uwe-7b-oce">
             <objects>
-                <tabBarController id="KRX-Ks-Qnf" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bww-ck-DW1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="xPa-fb-yeX" kind="relationship" relationship="viewControllers" id="Q5p-3z-2bD"/>
-                        <segue destination="Y5N-RB-Q2f" kind="relationship" relationship="viewControllers" id="gdI-dK-uFN"/>
-                        <segue destination="x8c-RG-a0j" kind="relationship" relationship="viewControllers" id="Aoo-H7-KAG"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WX6-9s-gVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="settings" id="MuW-8Z-LOK" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ETu-vM-UMD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CgX-pC-8ZE">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CgX-pC-8ZE" id="V4b-uu-Sdc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MuW-8Z-LOK" id="iWy-xG-EgM"/>
+                            <outlet property="delegate" destination="MuW-8Z-LOK" id="4YY-VA-Gbf"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="settings" id="vgc-VD-jwJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZo-V4-L7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-525" y="125"/>
-        </scene>
-        <!--contatti-->
-        <scene sceneID="win-at-mqE">
-            <objects>
-                <viewControllerPlaceholder storyboardName="contatti" id="xPa-fb-yeX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cWQ-QY-bEj"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UZA-eM-wbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="755" y="-419"/>
-        </scene>
-        <!--chat-->
-        <scene sceneID="lYr-0F-pdI">
-            <objects>
-                <viewControllerPlaceholder storyboardName="chat" id="Y5N-RB-Q2f" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fu1-XR-h1T"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="frR-W2-dag" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="866" y="626"/>
-        </scene>
-        <!--UITableViewController-IsE-8T-PVM-->
-        <scene sceneID="yhR-Z5-pN9">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UITableViewController-IsE-8T-PVM" id="x8c-RG-a0j" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AsR-8v-7iN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1026" y="76"/>
+            <point key="canvasLocation" x="580" y="-180"/>
         </scene>
     </scenes>
 </document>

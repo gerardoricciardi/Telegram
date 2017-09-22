@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contacts-->
+        <!--contatti-->
         <scene sceneID="GXn-6Y-e4g">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="contatti" storyboardName="Contacts" id="CUU-Ub-733" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="contatti" storyboardName="contatti" id="CUU-Ub-733" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="contatti" id="Syv-g2-9Mt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwh-1J-G8C" userLabel="First Responder" sceneMemberID="firstResponder"/>

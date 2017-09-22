@@ -17,7 +17,7 @@
 		07DD42B31F75397000244867 /* TelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42B21F75397000244867 /* TelegramUITests.swift */; };
 		07EA00631F754A9000C18FD8 /* contatti.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00621F754A9000C18FD8 /* contatti.storyboard */; };
 		07EA00661F754ACC00C18FD8 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00641F754ACC00C18FD8 /* chat.storyboard */; };
-		07EA00681F754AE700C18FD8 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00671F754AE600C18FD8 /* settings.storyboard */; };
+		07EA006A1F754FC000C18FD8 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00691F754FC000C18FD8 /* settings.storyboard */; };
 		8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F18D48A1F75410600AB659F /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		07DD42B41F75397000244867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07EA00621F754A9000C18FD8 /* contatti.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contatti.storyboard; sourceTree = "<group>"; };
 		07EA00651F754ACC00C18FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Telegram/Base.lproj/chat.storyboard; sourceTree = "<group>"; };
-		07EA00671F754AE600C18FD8 /* settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
+		07EA00691F754FC000C18FD8 /* settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
 		8F18D48A1F75410600AB659F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 				07EA00641F754ACC00C18FD8 /* chat.storyboard */,
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
-				07EA00671F754AE600C18FD8 /* settings.storyboard */,
+				07EA00691F754FC000C18FD8 /* settings.storyboard */,
 				07DD42991F75397000244867 /* Assets.xcassets */,
 				07DD429B1F75397000244867 /* LaunchScreen.storyboard */,
 				07DD429E1F75397000244867 /* Info.plist */,
@@ -248,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DD429D1F75397000244867 /* LaunchScreen.storyboard in Resources */,
-				07EA00681F754AE700C18FD8 /* settings.storyboard in Resources */,
+				07EA006A1F754FC000C18FD8 /* settings.storyboard in Resources */,
 				07DD429A1F75397000244867 /* Assets.xcassets in Resources */,
 				07EA00661F754ACC00C18FD8 /* chat.storyboard in Resources */,
 				07EA00631F754A9000C18FD8 /* contatti.storyboard in Resources */,

@@ -15,6 +15,7 @@
 		07DD429D1F75397000244867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD429B1F75397000244867 /* LaunchScreen.storyboard */; };
 		07DD42A81F75397000244867 /* TelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42A71F75397000244867 /* TelegramTests.swift */; };
 		07DD42B31F75397000244867 /* TelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42B21F75397000244867 /* TelegramUITests.swift */; };
+		8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F18D48A1F75410600AB659F /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		07DD42AE1F75397000244867 /* TelegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DD42B21F75397000244867 /* TelegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramUITests.swift; sourceTree = "<group>"; };
 		07DD42B41F75397000244867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F18D48A1F75410600AB659F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				07DD428F1F75397000244867 /* AppDelegate.swift */,
 				07DD42911F75397000244867 /* ViewController.swift */,
+				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07DD42991F75397000244867 /* Assets.xcassets */,
 				07DD429B1F75397000244867 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
+				8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */,
 				07DD42921F75397000244867 /* ViewController.swift in Sources */,
 				07DD42901F75397000244867 /* AppDelegate.swift in Sources */,
 			);
@@ -431,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SG6H3499A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Telegram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--3.Telegram";
@@ -446,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SG6H3499A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Telegram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--3.Telegram";

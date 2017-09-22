@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-525" y="125"/>
         </scene>
-        <!--Item-->
+        <!--Table View Controller-->
         <scene sceneID="BSe-ur-twm">
             <objects>
                 <tableViewController id="BHh-ij-jWI" sceneMemberID="viewController">

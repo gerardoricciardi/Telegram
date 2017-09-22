@@ -5,25 +5,42 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Impostazioni-->
         <scene sceneID="uwe-7b-oce">
             <objects>
-                <tableViewController storyboardIdentifier="settings" id="MuW-8Z-LOK" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="settings" id="MuW-8Z-LOK" customClass="SettingsTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ETu-vM-UMD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CgX-pC-8ZE">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="60" id="CgX-pC-8ZE" customClass="SettingsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CgX-pC-8ZE" id="V4b-uu-Sdc">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txL-4j-E4b">
+                                            <rect key="frame" x="127" y="8" width="46" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="txL-4j-E4b" firstAttribute="top" secondItem="V4b-uu-Sdc" secondAttribute="topMargin" id="5OL-Od-5Gl"/>
+                                        <constraint firstItem="txL-4j-E4b" firstAttribute="leading" secondItem="V4b-uu-Sdc" secondAttribute="leadingMargin" constant="119" id="KYk-qE-mfR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="txL-4j-E4b" secondAttribute="bottom" constant="22.5" id="zot-GG-nnn"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameUtente" destination="txL-4j-E4b" id="0Ac-1Q-Btc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

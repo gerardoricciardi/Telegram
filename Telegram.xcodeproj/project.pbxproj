@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336EB1F75614700973526 /* SettingsTableViewController.swift */; };
+		07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336ED1F75618900973526 /* SettingsTableViewCell.swift */; };
 		07DD42901F75397000244867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD428F1F75397000244867 /* AppDelegate.swift */; };
 		07DD42921F75397000244867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42911F75397000244867 /* ViewController.swift */; };
 		07DD42951F75397000244867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD42931F75397000244867 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C336EB1F75614700973526 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		07C336ED1F75618900973526 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		07DD428C1F75397000244867 /* Telegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DD428F1F75397000244867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DD42911F75397000244867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07EA00691F754FC000C18FD8 /* settings.storyboard */,
+				07C336ED1F75618900973526 /* SettingsTableViewCell.swift */,
+				07C336EB1F75614700973526 /* SettingsTableViewController.swift */,
 				07DD42991F75397000244867 /* Assets.xcassets */,
 				07DD429B1F75397000244867 /* LaunchScreen.storyboard */,
 				07DD429E1F75397000244867 /* Info.plist */,
@@ -278,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
+				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
+				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,
 				8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */,
 				07DD42921F75397000244867 /* ViewController.swift in Sources */,
 				07DD42901F75397000244867 /* AppDelegate.swift in Sources */,

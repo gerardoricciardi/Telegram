@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var prova = "Daniela mi leggi"
-   var ciao = "ciao"
+    var prova = "prova1"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

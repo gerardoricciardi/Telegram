@@ -21,6 +21,8 @@
 		07EA00661F754ACC00C18FD8 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00641F754ACC00C18FD8 /* chat.storyboard */; };
 		07EA006A1F754FC000C18FD8 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00691F754FC000C18FD8 /* settings.storyboard */; };
 		8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F18D48A1F75410600AB659F /* TableViewCell.swift */; };
+		8F9BB0F01F757FE800CD4DB2 /* TableViewCellChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BB0EF1F757FE800CD4DB2 /* TableViewCellChat.swift */; };
+		8F9BB0F41F75808300CD4DB2 /* TableViewControllerChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BB0F31F75808300CD4DB2 /* TableViewControllerChat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		07EA00651F754ACC00C18FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Telegram/Base.lproj/chat.storyboard; sourceTree = "<group>"; };
 		07EA00691F754FC000C18FD8 /* settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
 		8F18D48A1F75410600AB659F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8F9BB0EF1F757FE800CD4DB2 /* TableViewCellChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellChat.swift; sourceTree = "<group>"; };
+		8F9BB0F31F75808300CD4DB2 /* TableViewControllerChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerChat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		07DD42831F75397000244867 = {
 			isa = PBXGroup;
 			children = (
+				8F9BB0F31F75808300CD4DB2 /* TableViewControllerChat.swift */,
 				07DD428E1F75397000244867 /* Telegram */,
 				07DD42A61F75397000244867 /* TelegramTests */,
 				07DD42B11F75397000244867 /* TelegramUITests */,
@@ -115,6 +120,7 @@
 				07DD42911F75397000244867 /* ViewController.swift */,
 				07EA00621F754A9000C18FD8 /* contatti.storyboard */,
 				07EA00641F754ACC00C18FD8 /* chat.storyboard */,
+				8F9BB0EF1F757FE800CD4DB2 /* TableViewCellChat.swift */,
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07EA00691F754FC000C18FD8 /* settings.storyboard */,
@@ -287,8 +293,10 @@
 				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
 				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,
 				8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */,
+				8F9BB0F01F757FE800CD4DB2 /* TableViewCellChat.swift in Sources */,
 				07DD42921F75397000244867 /* ViewController.swift in Sources */,
 				07DD42901F75397000244867 /* AppDelegate.swift in Sources */,
+				8F9BB0F41F75808300CD4DB2 /* TableViewControllerChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

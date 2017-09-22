@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var prova = "Daniela mi leggi"
-   
+   var ciao = "ciao"
     
     override func viewDidLoad() {
         super.viewDidLoad()

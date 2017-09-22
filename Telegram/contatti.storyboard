@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BHh-ij-jWI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jno-5q-I1s">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--contatti-->
+        <!--Contacts-->
         <scene sceneID="BSe-ur-twm">
             <objects>
                 <tableViewController id="BHh-ij-jWI" sceneMemberID="viewController">
@@ -31,11 +31,30 @@
                             <outlet property="delegate" destination="BHh-ij-jWI" id="659-pO-F6f"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="contatti" id="Mb5-QZ-d1M"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="bE3-R9-9LA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8s8-dZ-d2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="-419"/>
+            <point key="canvasLocation" x="1093.5999999999999" y="-419.64017991004499"/>
+        </scene>
+        <!--contatti-->
+        <scene sceneID="t4S-MV-h3h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jno-5q-I1s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="contatti" id="Mb5-QZ-d1M"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LSN-qc-BXO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BHh-ij-jWI" kind="relationship" relationship="rootViewController" id="J6M-Ex-VJ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzm-Va-6dR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-420"/>
         </scene>
     </scenes>
 </document>

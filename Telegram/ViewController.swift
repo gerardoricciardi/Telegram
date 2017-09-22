@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var prova = "Daniela mi leggi"
+    var prova = "prova"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

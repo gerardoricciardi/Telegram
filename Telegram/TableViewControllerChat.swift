@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewControllerChat: UITableViewController {
 
+    var chat:[String]=["chat1","chat2","chat3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,23 +31,31 @@ class TableViewControllerChat: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return chat.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellChat", for: indexPath) as! TableViewCellChat
+        
+        cell.imageStatoMessaggio?.image=UIImage(named:"messaggioLetto")
+        
+        cell.imageChat?.image=UIImage(named : "sj")
+                cell.imageChat.layer.cornerRadius=30.0
+                cell.imageChat.clipsToBounds=true
+        
+        
+        
         // Configure the cell...
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

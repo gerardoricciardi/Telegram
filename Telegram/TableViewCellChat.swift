@@ -9,6 +9,9 @@
 import UIKit
 
 class TableViewCellChat: UITableViewCell {
+    
+    @IBOutlet var imageChat : UIImageView!
+    @IBOutlet var imageStatoMessaggio : UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

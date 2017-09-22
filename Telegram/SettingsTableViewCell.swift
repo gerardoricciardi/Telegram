@@ -10,9 +10,12 @@ import UIKit
 
 class SettingsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameUtente: UILabel!
-    
+    @IBOutlet weak var firstNameUser: UILabel!
+    @IBOutlet weak var secondNameUser: UILabel!
+    //@IBOutlet weak var firstNameUser: UILabel!
+    @IBOutlet weak var imageUtente: UIImageView!
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         // Initialization code
     }

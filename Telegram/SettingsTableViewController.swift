@@ -10,6 +10,9 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
+    var imageUtente = "imageUtente"
+    var firstNameUser = "Gerardo"
+    var secondNameUser = "Ricciardi"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,7 +43,10 @@ class SettingsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SettingsTableViewCell
-
+        cell.imageUtente?.image = UIImage(named: imageUtente)
+        cell.firstNameUser.text = firstNameUser
+        cell.secondNameUser.text = secondNameUser
+        
         // Configure the cell...
 
         return cell

@@ -41,7 +41,7 @@
         <scene sceneID="t4S-MV-h3h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jno-5q-I1s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="contatti" id="Mb5-QZ-d1M"/>
+                    <tabBarItem key="tabBarItem" title="contatti" image="user" id="Mb5-QZ-d1M"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LSN-qc-BXO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -57,4 +57,7 @@
             <point key="canvasLocation" x="244" y="-420"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user" width="32" height="32"/>
+    </resources>
 </document>

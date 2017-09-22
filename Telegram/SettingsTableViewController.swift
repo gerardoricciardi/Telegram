@@ -44,6 +44,8 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SettingsTableViewCell
         cell.imageUtente?.image = UIImage(named: imageUtente)
+        cell.imageUtente.layer.cornerRadius = 30.0
+        cell.imageUtente.clipsToBounds = true
         cell.firstNameUser.text = firstNameUser
         cell.secondNameUser.text = secondNameUser
         

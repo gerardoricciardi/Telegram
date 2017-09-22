@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="BHh-ij-jWI" id="659-pO-F6f"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Mb5-QZ-d1M"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Mb5-QZ-d1M"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8s8-dZ-d2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

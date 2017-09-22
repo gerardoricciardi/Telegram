@@ -20,8 +20,6 @@
 		07EA00631F754A9000C18FD8 /* contatti.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00621F754A9000C18FD8 /* contatti.storyboard */; };
 		07EA00661F754ACC00C18FD8 /* chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00641F754ACC00C18FD8 /* chat.storyboard */; };
 		07EA006A1F754FC000C18FD8 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EA00691F754FC000C18FD8 /* settings.storyboard */; };
-		13B12BAD1F75762400BD06BF /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B12BAC1F75762400BD06BF /* ContactsTableViewController.swift */; };
-		13B12BAF1F75764700BD06BF /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B12BAE1F75764700BD06BF /* ContactsTableViewCell.swift */; };
 		8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F18D48A1F75410600AB659F /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +60,6 @@
 		07EA00621F754A9000C18FD8 /* contatti.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contatti.storyboard; sourceTree = "<group>"; };
 		07EA00651F754ACC00C18FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Telegram/Base.lproj/chat.storyboard; sourceTree = "<group>"; };
 		07EA00691F754FC000C18FD8 /* settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
-		13B12BAC1F75762400BD06BF /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
-		13B12BAE1F75764700BD06BF /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 		8F18D48A1F75410600AB659F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,8 +114,6 @@
 				07DD428F1F75397000244867 /* AppDelegate.swift */,
 				07DD42911F75397000244867 /* ViewController.swift */,
 				07EA00621F754A9000C18FD8 /* contatti.storyboard */,
-				13B12BAC1F75762400BD06BF /* ContactsTableViewController.swift */,
-				13B12BAE1F75764700BD06BF /* ContactsTableViewCell.swift */,
 				07EA00641F754ACC00C18FD8 /* chat.storyboard */,
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
@@ -289,14 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B12BAF1F75764700BD06BF /* ContactsTableViewCell.swift in Sources */,
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
 				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
 				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,
 				8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */,
 				07DD42921F75397000244867 /* ViewController.swift in Sources */,
 				07DD42901F75397000244867 /* AppDelegate.swift in Sources */,
-				13B12BAD1F75762400BD06BF /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

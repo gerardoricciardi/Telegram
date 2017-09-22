@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336EB1F75614700973526 /* SettingsTableViewController.swift */; };
 		07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336ED1F75618900973526 /* SettingsTableViewCell.swift */; };
+		07C3372D1F759EE600973526 /* settings1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3372C1F759EE600973526 /* settings1TableViewCell.swift */; };
+		07C337311F75C75F00973526 /* greyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C337301F75C75F00973526 /* greyTableViewCell.swift */; };
 		07DD42901F75397000244867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD428F1F75397000244867 /* AppDelegate.swift */; };
 		07DD42921F75397000244867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD42911F75397000244867 /* ViewController.swift */; };
 		07DD42951F75397000244867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DD42931F75397000244867 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		07C336EB1F75614700973526 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		07C336ED1F75618900973526 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		07C3372C1F759EE600973526 /* settings1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings1TableViewCell.swift; sourceTree = "<group>"; };
+		07C337301F75C75F00973526 /* greyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greyTableViewCell.swift; sourceTree = "<group>"; };
 		07DD428C1F75397000244867 /* Telegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DD428F1F75397000244867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DD42911F75397000244867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,8 +128,10 @@
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07EA00691F754FC000C18FD8 /* settings.storyboard */,
+				07C3372C1F759EE600973526 /* settings1TableViewCell.swift */,
 				07C336ED1F75618900973526 /* SettingsTableViewCell.swift */,
 				07C336EB1F75614700973526 /* SettingsTableViewController.swift */,
+				07C337301F75C75F00973526 /* greyTableViewCell.swift */,
 				07DD42991F75397000244867 /* Assets.xcassets */,
 				07DD429B1F75397000244867 /* LaunchScreen.storyboard */,
 				07DD429E1F75397000244867 /* Info.plist */,
@@ -292,8 +298,10 @@
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
 				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
 				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,
+				07C3372D1F759EE600973526 /* settings1TableViewCell.swift in Sources */,
 				8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */,
 				8F9BB0F01F757FE800CD4DB2 /* TableViewCellChat.swift in Sources */,
+				07C337311F75C75F00973526 /* greyTableViewCell.swift in Sources */,
 				07DD42921F75397000244867 /* ViewController.swift in Sources */,
 				07DD42901F75397000244867 /* AppDelegate.swift in Sources */,
 				8F9BB0F41F75808300CD4DB2 /* TableViewControllerChat.swift in Sources */,

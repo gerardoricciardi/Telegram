@@ -13,6 +13,10 @@ class SettingsTableViewController: UITableViewController {
     var imageUtente = "imageUtente"
     var firstNameUser = "Gerardo"
     var secondNameUser = "Ricciardi"
+    
+    let section = ["1","2","3"]
+    let items = [["profilo"],["green"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,26 +36,48 @@ class SettingsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return section.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+       
+        return self.items[section].count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SettingsTableViewCell
-        cell.imageUtente?.image = UIImage(named: imageUtente)
-        cell.imageUtente.layer.cornerRadius = 30.0
-        cell.imageUtente.clipsToBounds = true
-        cell.firstNameUser.text = firstNameUser
-        cell.secondNameUser.text = secondNameUser
-        
-        // Configure the cell...
-
-        return cell
+       
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SettingsTableViewCell
+            cell.imageUtente?.image = UIImage(named: imageUtente)
+            cell.imageUtente.layer.cornerRadius = 30.0
+            cell.imageUtente.clipsToBounds = true
+            
+            cell.firstNameUser.text = firstNameUser
+            cell.secondNameUser.text = secondNameUser
+            
+            tableView.estimatedRowHeight = 36.0
+            tableView.rowHeight = UITableViewAutomaticDimension
+            //set the data here
+            
+            return cell
+        }
+            
+        else if indexPath.section == 1 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCellGreen", for: indexPath) as! greyTableViewCell
+            print("indexPath.row \(indexPath.row), indexpath.section \(indexPath.section)")
+            //self.tableView.insertRows(at: [1][0], with: <#T##UITableViewRowAnimation#>)
+            return cell
+        }
+ 
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell1", for: indexPath) as! settings1TableViewCell
+            //set the data here
+            cell.nameOfSetting.text = items[indexPath.section][indexPath.row]
+            return cell
+        }
     }
  
 

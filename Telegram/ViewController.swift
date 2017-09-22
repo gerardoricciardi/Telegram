@@ -25,7 +25,6 @@ class ViewController: UIViewController {
     
    var martina = "non va"
 
-ssss
 
 }
 

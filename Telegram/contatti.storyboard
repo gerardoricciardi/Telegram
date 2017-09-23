@@ -65,7 +65,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <searchBar contentMode="redraw" barStyle="black" text="Search for contacts or usernsmes" translatesAutoresizingMaskIntoConstraints="NO" id="nBK-Hr-gan">
+                                        <searchBar contentMode="redraw" barStyle="black" text="Search for contacts or usernames" translatesAutoresizingMaskIntoConstraints="NO" id="nBK-Hr-gan">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>

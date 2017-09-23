@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,16 +85,15 @@
                                     <outlet property="immagine1" destination="Vi0-Oh-A9L" id="E3y-Rn-QV1"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="100" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="55" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="128" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ofp-U5-av2" id="UVs-0p-nAY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-OJ-ZyV">
-                                            <rect key="frame" x="154" y="29" width="120" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-OJ-ZyV">
+                                            <rect key="frame" x="109" y="19" width="120" height="20.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NomeCognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAz-BI-ZSM">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
@@ -107,11 +107,16 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-xK-eCT">
-                                            <rect key="frame" x="33" y="23" width="67" height="53"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-pv-tjS">
+                                            <rect key="frame" x="35" y="8" width="32" height="36"/>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gPc-pv-tjS" firstAttribute="leading" secondItem="UVs-0p-nAY" secondAttribute="leadingMargin" constant="27" id="3Xp-F7-LTy"/>
+                                        <constraint firstItem="gOe-OJ-ZyV" firstAttribute="leading" secondItem="gPc-pv-tjS" secondAttribute="trailing" constant="42" id="5Wf-hT-XiC"/>
+                                        <constraint firstItem="gPc-pv-tjS" firstAttribute="top" secondItem="UVs-0p-nAY" secondAttribute="topMargin" id="jmv-ef-69G"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gPc-pv-tjS" secondAttribute="bottom" constant="2.5" id="vnS-cf-ZIW"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

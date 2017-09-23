@@ -63,8 +63,8 @@ class ContactsTableViewController: UITableViewController {
                 cell.immagine1.layer.cornerRadius = 30.0
                 cell.immagine1.clipsToBounds = true
                 
-                cell.nome?.text = nome
-                cell.numero?.text = numero
+                cell.nome.text = nome
+                cell.numero.text = numero
                 
                 tableView.estimatedRowHeight = 36.0
                 tableView.rowHeight = UITableViewAutomaticDimension

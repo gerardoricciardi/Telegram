@@ -102,6 +102,8 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="immagine1" destination="Vi0-Oh-A9L" id="E3y-Rn-QV1"/>
+                                    <outlet property="nome" destination="UeO-BX-j3C" id="REf-Rv-gxr"/>
+                                    <outlet property="numero" destination="fAx-eY-saq" id="wkA-82-GkX"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="71" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">

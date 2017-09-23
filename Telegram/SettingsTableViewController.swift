@@ -114,6 +114,17 @@ class SettingsTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
+        
+        
+        
+        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("storyBoardIdFor your new ViewController") as SecondViewController
+        
+        self.navigationController.pushViewController(secondViewController, animated: true)
+ */
+    }
 
     /*
     // Override to support conditional editing of the table view.

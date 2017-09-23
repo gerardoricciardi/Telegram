@@ -1,5 +1,5 @@
 //
-//  ContactsTableViewCell.swift
+//  ContactsTableViewCell2.swift
 //  Telegram
 //
 //  Created by Liguori Giorgia on 23/09/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ContactsTableViewCell: UITableViewCell {
-    @IBOutlet var immagine1: UIImageView!
+class ContactsTableViewCell2: UITableViewCell {
     
-    @IBOutlet var nome : UILabel!
-    @IBOutlet var numero : UILabel!
+    @IBOutlet var immagine2: UIImageView!
+    @IBOutlet var nomeContatto : UILabel!
+    @IBOutlet var accesso : UILabel!
     
     
     

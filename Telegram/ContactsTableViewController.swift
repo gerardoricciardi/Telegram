@@ -9,7 +9,18 @@
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
-
+    
+    var immagine1 = "sj"
+    var immagine2 = "i c"
+    var nome = "giorgia liguori"
+    var numero = "8726348762384"
+    var nomeContatto = "martina"
+    var accesso = "3 ore fa"
+    
+    
+    let section = ["1", "2"]
+    let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,23 +40,50 @@ class ContactsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return section.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.items[section].count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        print("pippo")
+        
 
+        if indexPath.section == 0 {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
+        cell.immagine1?.image = UIImage(named : "i c")
+        
+        cell.nome?.text = nome
+        cell.numero?.text = numero
+            tableView.estimatedRowHeight = 36.0
+            tableView.rowHeight = UITableViewAutomaticDimension
+       
         // Configure the cell...
 
         return cell
     }
-    */
+        else  {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
+          
+            cell.immagine2?.image = UIImage(named : "sj")
+            cell.nomeContatto?.text = nomeContatto
+            cell.accesso?.text = accesso
+            return cell
+        }
+            
+    }
+            
+            
+        
+        
+        
+        
+        
 
     /*
     // Override to support conditional editing of the table view.

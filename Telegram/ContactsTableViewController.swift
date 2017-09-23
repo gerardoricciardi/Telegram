@@ -51,12 +51,10 @@ class ContactsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        if indexPath.section == 0 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
-        cell.immagine1?.image = UIImage(named : "i c")
+       
         
         
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
           
             if indexPath.section == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
@@ -81,9 +79,9 @@ class ContactsTableViewController: UITableViewController {
                 cell.immagine2?.image = UIImage (named : immagine2)
                 return cell
             }
-        }
-            
     }
+            
+
         
     /*
     // Override to support conditional editing of the table view.
@@ -129,5 +127,6 @@ class ContactsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

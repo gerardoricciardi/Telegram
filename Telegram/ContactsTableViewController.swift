@@ -56,7 +56,7 @@ class ContactsTableViewController: UITableViewController {
         cell.immagine1?.image = UIImage(named : "i c")
         
         
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           
             if indexPath.section == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell

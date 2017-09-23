@@ -11,7 +11,7 @@ import UIKit
 class ContactsTableViewController: UITableViewController {
     
     var immagine1 = "gl"
-    var immagini2 = "user1"
+    var immagini = ["user1","user2","user3","user4","user5","user6"]
     var nome = "Giorgia Liguori"
     var numero = "8726348762384"
     
@@ -102,7 +102,8 @@ class ContactsTableViewController: UITableViewController {
                 
               
                cell.contatto.text = items[indexPath.section][indexPath.row]
-                cell.immagine2?.image = UIImage(named : immagini2)
+               cell.immagine2?.image = UIImage(named : immagini[indexPath.row])
+                
                 return cell
             }
         }

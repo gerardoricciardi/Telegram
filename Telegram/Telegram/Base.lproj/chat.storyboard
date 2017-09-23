@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ERq-pS-H4h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,6 +75,7 @@
                                 <connections>
                                     <outlet property="imageChat" destination="XBa-96-2pO" id="ySE-mG-nWT"/>
                                     <outlet property="imageStatoMessaggio" destination="1Hq-9s-rJh" id="U8s-bv-nFC"/>
+                                    <segue destination="S6j-yV-Y4I" kind="show" identifier="messaggi" id="JbS-Sk-EOi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -88,38 +90,60 @@
                         <barButtonItem key="rightBarButtonItem" title="write" image="write" id="zGa-IG-S16"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="a20-xm-7qj" kind="show" id="4yb-m0-eY0"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTF-Vw-BnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="559" y="-63"/>
         </scene>
         <!--MessageViewController-->
-        <scene sceneID="n1e-ND-YWS">
+        <scene sceneID="Vvj-0c-vTF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygl-dK-NCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="MessageViewController" id="a20-xm-7qj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dnf-9w-x1P">
+                <viewController title="MessageViewController" id="S6j-yV-Y4I" customClass="MessageViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XeW-As-5ZG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telegramBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WHe-OA-h3b">
+                                <rect key="frame" x="0.0" y="44" width="375" height="587"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uw6-HE-LNA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="gkk-TP-1xZ">
+                                        <barButtonItem key="rightBarButtonItem" title="profilePhoto" id="wGD-RK-wiJ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQy-3i-NhY">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="attach" id="yBR-z8-TgT"/>
+                                    <barButtonItem id="led-T6-Kth">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="skH-1H-BfY">
+                                            <rect key="frame" x="53" y="7" width="261" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="textColor" red="0.76505829015544036" green="0.76505829015544036" blue="0.76505829015544036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="stickers" id="Pt0-3l-3bU"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telegramBackground" id="kxO-2f-Jkf">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <connections>
-                            <outlet property="dataSource" destination="a20-xm-7qj" id="PXe-MY-cqm"/>
-                            <outlet property="delegate" destination="a20-xm-7qj" id="Kg6-0t-EBF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="W8p-id-mv0">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="6XR-cV-qPd"/>
-                    </navigationItem>
-                </tableViewController>
+                        <viewLayoutGuide key="safeArea" id="GYD-wM-cLY"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePhoto" destination="wGD-RK-wiJ" id="ueB-Yh-7xE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovk-Dj-WiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="33.733133433283363"/>
+            <point key="canvasLocation" x="1676" y="699.40029985007504"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JOb-ba-JZ7">
@@ -139,7 +163,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attach" width="32" height="32"/>
         <image name="chatIcon" width="40" height="40"/>
+        <image name="stickers" width="32" height="32"/>
         <image name="telegramBackground" width="236" height="369"/>
         <image name="write" width="32" height="32"/>
     </resources>

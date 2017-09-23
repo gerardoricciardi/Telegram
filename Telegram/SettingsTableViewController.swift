@@ -17,6 +17,10 @@ class SettingsTableViewController: UITableViewController {
     let section = ["1","2"]
     let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
     
+    let notifiche = ["Avviso", "Anteprima messaggio", "Suono"]
+    let privacy = ["Utenti Bloccati", "Ultimo accesso", "Chiamate vocali"]
+    let dati = ["Utilizzo archivio", "Utilizzo rete", "Chat Private", "Gruppi"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -93,32 +97,25 @@ class SettingsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue"{
             if let indexPath = tableView.indexPathForSelectedRow{
-                let destinationController = segue.destination as! DetailsTableViewController
-                destinationController.riga.append("Notifiche")
-                destinationController.riga.append("Privacy")
-                
+                let checkRow = indexPath.row
+                if checkRow == 0 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = notifiche
+                }
+                if checkRow == 1 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = privacy
+                }
+                if checkRow == 2 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = dati
+                }
                 
             }
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-        if indexPath.section == 1{
-            
-        }
-        //print("index path row \(indexPath.row)")
-        //print("index path section \(indexPath.section)")
-        /*
-        
-        
-        
-        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("storyBoardIdFor your new ViewController") as SecondViewController
-        
-        self.navigationController.pushViewController(secondViewController, animated: true)
-         */
-    }
+    
 
     /*
     // Override to support conditional editing of the table view.

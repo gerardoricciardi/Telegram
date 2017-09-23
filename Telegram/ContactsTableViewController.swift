@@ -51,10 +51,6 @@ class ContactsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        if indexPath.section == 0 {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
-        cell.immagine1?.image = UIImage(named : "i c")
-          
             if indexPath.section == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
                 cell.immagine1?.image = UIImage(named: immagine1)
@@ -80,7 +76,7 @@ class ContactsTableViewController: UITableViewController {
                 return cell
             }
         }
-    }
+
 
 
 
@@ -119,7 +115,7 @@ class ContactsTableViewController: UITableViewController {
     }
     */
 
-}
+
 
     /*
     // MARK: - Navigation
@@ -130,3 +126,4 @@ class ContactsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}

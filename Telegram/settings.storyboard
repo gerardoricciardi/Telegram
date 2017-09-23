@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -108,6 +109,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameOfSetting" destination="xDh-Fj-ujq" id="5rg-1c-gzB"/>
+                                    <segue destination="SN2-6U-wdo" kind="show" identifier="segue" id="LHs-TD-EBC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -124,6 +126,33 @@
             </objects>
             <point key="canvasLocation" x="919.20000000000005" y="-180.35982008995504"/>
         </scene>
+        <!--Setting1 Row View Controller-->
+        <scene sceneID="mpb-uZ-HoQ">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="SN2-6U-wdo" customClass="Setting1RowViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2I-Cr-Df5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCJ-ja-4B1">
+                                <rect key="frame" x="166" y="135" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jMw-ij-MHP"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="gCJ-ja-4B1" id="FLt-jd-BfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba6-4l-wRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="-175"/>
+        </scene>
         <!--settings-->
         <scene sceneID="O3m-YY-3ur">
             <objects>
@@ -136,7 +165,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="MuW-8Z-LOK" kind="relationship" relationship="rootViewController" id="NJv-lQ-uTB"/>
+                        <segue destination="MuW-8Z-LOK" kind="relationship" relationship="rootViewController" id="jLz-n5-QzO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrL-aA-dVK" userLabel="First Responder" sceneMemberID="firstResponder"/>

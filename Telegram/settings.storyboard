@@ -142,15 +142,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-jr-B6E">
-                                            <rect key="frame" x="37" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="29" id="YgX-TQ-php"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Fm8-jr-B6E" secondAttribute="trailing" constant="288" id="n6r-M8-Z2X"/>
+                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="12" id="FKN-15-txl"/>
+                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="3" id="POK-56-kDr"/>
+                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="12" id="YgX-TQ-php"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Fm8-jr-B6E" secondAttribute="bottom" constant="3.5" id="kzx-89-OxQ"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Fm8-jr-B6E" secondAttribute="bottom" constant="3.5" id="vcZ-xd-P4i"/>
                                         <constraint firstItem="Fm8-jr-B6E" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="3" id="vrO-G6-76p"/>
                                     </constraints>

@@ -68,7 +68,9 @@
                             <outlet property="delegate" destination="9Ct-rd-Kq2" id="DxF-oZ-l6H"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contatti" id="DAM-W7-fZ0"/>
+                    <navigationItem key="navigationItem" title="Contatti" id="DAM-W7-fZ0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xTA-kJ-8ES"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMd-9F-L2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

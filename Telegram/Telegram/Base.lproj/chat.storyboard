@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X0d-SZ-5YY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -36,15 +36,15 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12/10/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgS-SP-z9a">
                                             <rect key="frame" x="297" y="7" width="78" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.76505829015544036" green="0.76505829015544036" blue="0.76505829015544036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-9s-rJh">
                                             <rect key="frame" x="265" y="7" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3HI-K4-Wxf">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3HI-K4-Wxf">
                                             <rect key="frame" x="82" y="8" width="65.5" height="41"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scarlett" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv3-zJ-12c">
@@ -56,7 +56,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8u-uS-2R4">
                                                     <rect key="frame" x="0.0" y="20.5" width="65.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.76505829015544036" green="0.76505829015544036" blue="0.76505829015544036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -88,30 +88,59 @@
                         <barButtonItem key="rightBarButtonItem" title="write" image="write" id="zGa-IG-S16"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="a20-xm-7qj" kind="show" id="4yb-m0-eY0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTF-Vw-BnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496.80000000000001" y="585.1574212893554"/>
+            <point key="canvasLocation" x="559" y="-63"/>
+        </scene>
+        <!--MessageViewController-->
+        <scene sceneID="n1e-ND-YWS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygl-dK-NCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="MessageViewController" id="a20-xm-7qj" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dnf-9w-x1P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telegramBackground" id="kxO-2f-Jkf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <connections>
+                            <outlet property="dataSource" destination="a20-xm-7qj" id="PXe-MY-cqm"/>
+                            <outlet property="delegate" destination="a20-xm-7qj" id="Kg6-0t-EBF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="W8p-id-mv0">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="6XR-cV-qPd"/>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="33.733133433283363"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ega-2e-RO8">
+        <scene sceneID="JOb-ba-JZ7">
             <objects>
-                <navigationController id="X0d-SZ-5YY" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o2C-Bm-cDd">
+                <navigationController id="ERq-pS-H4h" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ws1-C6-hes">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Ub1-4N-rmi" kind="relationship" relationship="rootViewController" id="tbJ-dj-2ee"/>
+                        <segue destination="Ub1-4N-rmi" kind="relationship" relationship="rootViewController" id="b9m-1t-bac"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aj9-wA-350" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSg-f0-gut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337" y="698"/>
+            <point key="canvasLocation" x="-271" y="707"/>
         </scene>
     </scenes>
     <resources>
         <image name="chatIcon" width="40" height="40"/>
+        <image name="telegramBackground" width="236" height="369"/>
         <image name="write" width="32" height="32"/>
     </resources>
 </document>

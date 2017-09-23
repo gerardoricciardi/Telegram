@@ -10,12 +10,14 @@ import UIKit
 
 class MessageViewController: UIViewController {
 
-    @IBOutlet var profilePhoto : UIBarButtonItem!
+    @IBOutlet var profilePhoto : UIImageView!
     var stringFoto = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         profilePhoto.image=UIImage( named : stringFoto)
+       profilePhoto.layer.cornerRadius=30.0
+        profilePhoto.clipsToBounds=true
 
         // Do any additional setup after loading the view.
     }

@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--contatti-->
+        <!--contacts-->
         <scene sceneID="t4S-MV-h3h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jno-5q-I1s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="contatti" image="user" id="Mb5-QZ-d1M"/>
+                    <tabBarItem key="tabBarItem" title="contacts" image="user" id="Mb5-QZ-d1M"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LSN-qc-BXO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="244" y="-420"/>
         </scene>
-        <!--Contatti-->
+        <!--Contacts-->
         <scene sceneID="kQP-a7-rWu">
             <objects>
                 <tableViewController id="9Ct-rd-Kq2" customClass="ContactsTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,7 +169,7 @@
                             <outlet property="delegate" destination="9Ct-rd-Kq2" id="DxF-oZ-l6H"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Contatti" id="DAM-W7-fZ0">
+                    <navigationItem key="navigationItem" title="Contacts" id="DAM-W7-fZ0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xTA-kJ-8ES">
                             <connections>
                                 <segue destination="gLc-6D-wam" kind="show" id="4WK-14-HcA"/>

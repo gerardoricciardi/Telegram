@@ -37,15 +37,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="182" id="wpd-Zc-VhT" customClass="ContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="182"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="178" id="wpd-Zc-VhT" customClass="ContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="178"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpd-Zc-VhT" id="RKu-6Y-wXY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="181.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="177.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="17Q-PR-W2Z">
-                                            <rect key="frame" x="141" y="98" width="120" height="35"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="17Q-PR-W2Z">
+                                            <rect key="frame" x="116" y="89" width="144" height="35"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NomeCognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-BX-j3C">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
@@ -77,8 +77,8 @@
                                             <color key="barTintColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi0-Oh-A9L">
-                                            <rect key="frame" x="23" y="82" width="85" height="67"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vi0-Oh-A9L">
+                                            <rect key="frame" x="23" y="89" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="udJ-K1-9QX"/>
                                             </constraints>
@@ -87,18 +87,18 @@
                                     <constraints>
                                         <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="08I-7k-131"/>
                                         <constraint firstAttribute="trailing" secondItem="nBK-Hr-gan" secondAttribute="trailing" id="0T0-7Y-iPA"/>
-                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leadingMargin" constant="14" id="1bt-3A-XfN"/>
                                         <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="45" id="AB8-Mz-aca"/>
-                                        <constraint firstAttribute="bottom" secondItem="Vi0-Oh-A9L" secondAttribute="bottom" constant="20.5" id="BPe-YY-2yB"/>
                                         <constraint firstItem="nBK-Hr-gan" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leading" id="BU4-5G-u7Z"/>
-                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leading" constant="35" id="PHn-bq-1WW"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Vi0-Oh-A9L" secondAttribute="bottom" constant="56.5" id="RfP-be-dX2"/>
+                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="26" id="GUd-5z-u6V"/>
+                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leadingMargin" constant="15" id="J6f-4J-O5X"/>
                                         <constraint firstAttribute="trailing" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="280" id="SrJ-zK-byc"/>
                                         <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="45" id="TZQ-JP-CJP"/>
                                         <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="Zvl-qW-f7X"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="17Q-PR-W2Z" secondAttribute="trailing" constant="107" id="alQ-jE-3Dq"/>
                                         <constraint firstItem="17Q-PR-W2Z" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="hD4-9b-cxv"/>
                                         <constraint firstItem="nBK-Hr-gan" firstAttribute="top" secondItem="RKu-6Y-wXY" secondAttribute="top" id="hNj-ah-oYW"/>
+                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="33" id="lHL-5l-kjc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Vi0-Oh-A9L" secondAttribute="bottom" constant="20.5" id="nrp-Ei-EOC"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -107,18 +107,18 @@
                                     <outlet property="numero" destination="fAx-eY-saq" id="wkA-82-GkX"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="60" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="210" width="375" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="57" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="206" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ofp-U5-av2" id="UVs-0p-nAY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-OJ-ZyV">
                                             <rect key="frame" x="109" y="19" width="120" height="20.5"/>
                                         </stackView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-pv-tjS">
-                                            <rect key="frame" x="35" y="8" width="32" height="41"/>
+                                            <rect key="frame" x="35" y="8" width="32" height="38"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-QV-jw6">
                                             <rect key="frame" x="109" y="8" width="120" height="35"/>

@@ -57,7 +57,6 @@ class ContactsTableViewController: UITableViewController {
         if section == 1{
             grayHeader.backgroundColor = UIColor.gray
             grayHeader.frame = CGRect(x: 5, y: 10, width: view.frame.width, height: 20)
-            
             print("header in section \(section)")
             grayHeader.isHidden = false
             

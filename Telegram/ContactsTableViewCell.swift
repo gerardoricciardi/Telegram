@@ -2,14 +2,16 @@
 //  ContactsTableViewCell.swift
 //  Telegram
 //
-//  Created by Iammarino Martina on 22/09/17.
+//  Created by Liguori Giorgia on 23/09/17.
 //  Copyright © 2017 Ricciardi Gerardo. All rights reserved.
 //
 
 import UIKit
 
 class ContactsTableViewCell: UITableViewCell {
-
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

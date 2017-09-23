@@ -11,6 +11,7 @@ import UIKit
 class ContactsTableViewCell2: UITableViewCell {
     
     @IBOutlet weak var contatto: UILabel!
+    @IBOutlet weak var accesso: UILabel!
      @IBOutlet weak var immagine2: UIImageView!
     
     override func awakeFromNib() {

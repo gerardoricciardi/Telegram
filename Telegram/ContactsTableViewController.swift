@@ -11,15 +11,45 @@ import UIKit
 class ContactsTableViewController: UITableViewController {
     
     var immagine1 = "gl"
-    var immagine2 = "user"
+    var immagini2 = "user1"
     var nome = "Giorgia Liguori"
     var numero = "8726348762384"
-    var contatto = "martina"
-    var accesso = "3 ore fa"
+    
     
     let section = ["1", "2"]
     
     let items = [["profilo"], ["Martina Iammarino", "Daniela Zabatta", "Fabio Dell'infante", "Gerardo ricciardi", "Toni Pagliaro"]]
+    
+    
+    
+    
+    
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        
+        let grayHeader = UIView()
+        grayHeader.isHidden = true
+        if section == 1{
+            grayHeader.backgroundColor = UIColor.gray
+            grayHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: 30)
+            
+            print("header in section \(section)")
+            grayHeader.isHidden = false
+            
+        }
+        return grayHeader
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height = 0.0
+        if section == 1{
+            height = 10
+            
+        }
+        return CGFloat(height)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +82,7 @@ class ContactsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
             if indexPath.section == 0 {
+                
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
                 cell.immagine1?.image = UIImage(named: immagine1)
                 cell.immagine1.layer.cornerRadius = 30.0
@@ -69,10 +100,9 @@ class ContactsTableViewController: UITableViewController {
             else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
                 
-                
-               // cell.contatto.text = items[indexPath.section][indexPath.row]
-                cell.immagine2?.image = UIImage (named : immagine2)
-                
+              
+               cell.contatto.text = items[indexPath.section][indexPath.row]
+                cell.immagine2?.image = UIImage(named : immagini2)
                 return cell
             }
         }

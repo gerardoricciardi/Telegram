@@ -11,11 +11,11 @@ import UIKit
 class MessageViewController: UIViewController {
 
     @IBOutlet var profilePhoto : UIBarButtonItem!
-    
+    var stringFoto = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        profilePhoto.image=UIImage( named : stringFoto)
 
         // Do any additional setup after loading the view.
     }

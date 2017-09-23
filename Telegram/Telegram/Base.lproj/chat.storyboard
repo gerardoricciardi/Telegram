@@ -75,7 +75,7 @@
                                 <connections>
                                     <outlet property="imageChat" destination="XBa-96-2pO" id="ySE-mG-nWT"/>
                                     <outlet property="imageStatoMessaggio" destination="1Hq-9s-rJh" id="U8s-bv-nFC"/>
-                                    <segue destination="S6j-yV-Y4I" kind="show" identifier="messaggi" id="JbS-Sk-EOi"/>
+                                    <segue destination="S6j-yV-Y4I" kind="showDetail" identifier="messaggi" id="k8Y-Vd-M21"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -104,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telegramBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WHe-OA-h3b">
-                                <rect key="frame" x="0.0" y="44" width="375" height="587"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="564"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uw6-HE-LNA">
@@ -116,21 +116,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQy-3i-NhY">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytj-vn-gie">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="attach" id="yBR-z8-TgT"/>
-                                    <barButtonItem id="led-T6-Kth">
-                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="skH-1H-BfY">
-                                            <rect key="frame" x="53" y="7" width="261" height="30"/>
+                                    <barButtonItem title="Item" image="attach" id="44J-pL-e4z"/>
+                                    <barButtonItem style="plain" id="S6Z-15-ejX">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ZCH-hn-LfN">
+                                            <rect key="frame" x="53" y="7" width="235" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="textColor" red="0.76505829015544036" green="0.76505829015544036" blue="0.76505829015544036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="stickers" id="Pt0-3l-3bU"/>
+                                    <barButtonItem title="Item" image="stickers" id="mpO-uq-a6r"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ovk-Dj-WiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="699.40029985007504"/>
+            <point key="canvasLocation" x="1726" y="47"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JOb-ba-JZ7">

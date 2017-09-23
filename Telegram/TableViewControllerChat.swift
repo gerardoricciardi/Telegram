@@ -62,7 +62,7 @@ class TableViewControllerChat: UITableViewController {
             print("Metodo prepare....")
             if let indexPath=tableView.indexPathForSelectedRow{
                 let destinationController=segue.destination as! MessageViewController
-                destinationController.profilePhoto.image=(UIImage(named : "sj"))
+                destinationController.stringFoto="sj"
 
             }
         }

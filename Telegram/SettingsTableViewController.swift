@@ -14,12 +14,18 @@ class SettingsTableViewController: UITableViewController {
     var firstNameUser = "Gerardo"
     var secondNameUser = "Ricciardi"
     
-    let section = ["1","2","3"]
-    let items = [["profilo"],["green"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
+    let section = ["1","2"]
+    let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+/*
+        let greyHeader = UIView()
+        greyHeader.backgroundColor = UIColor.gray
+        greyHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: view.frame.height)
+        
+        tableView.tableHeaderView = greyHeader
+ */
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -45,7 +51,31 @@ class SettingsTableViewController: UITableViewController {
         return self.items[section].count
     }
 
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+       
+        
+        let grayHeader = UIView()
+        grayHeader.isHidden = true
+        if section == 1{
+            grayHeader.backgroundColor = UIColor.gray
+            grayHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: 30)
+            
+            print("header in section \(section)")
+            grayHeader.isHidden = false
+        
+        }
+        return grayHeader
+        
+    }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height = 0.0
+        if section == 1{
+            height = 10
+            
+        }
+        return CGFloat(height)
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         if indexPath.section == 0 {
@@ -63,15 +93,6 @@ class SettingsTableViewController: UITableViewController {
             
             return cell
         }
-            
-        else if indexPath.section == 1 {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCellGreen", for: indexPath) as! greyTableViewCell
-            print("indexPath.row \(indexPath.row), indexpath.section \(indexPath.section)")
-            //self.tableView.insertRows(at: [1][0], with: <#T##UITableViewRowAnimation#>)
-            return cell
-        }
- 
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell1", for: indexPath) as! settings1TableViewCell
             //set the data here

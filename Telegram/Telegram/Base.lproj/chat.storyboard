@@ -122,27 +122,24 @@
                                     <barButtonItem title="Item" image="attach" id="44J-pL-e4z">
                                         <color key="tintColor" red="0.84204987046632129" green="0.84204987046632129" blue="0.84204987046632129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" id="S6Z-15-ejX">
+                                    <barButtonItem width="100" style="plain" id="S6Z-15-ejX">
                                         <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ZCH-hn-LfN">
-                                            <rect key="frame" x="53" y="7" width="250" height="30"/>
+                                            <rect key="frame" x="53" y="7" width="233" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="textColor" red="0.89981379533678751" green="0.89981379533678751" blue="0.89981379533678751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </barButtonItem>
-                                    <barButtonItem width="193" style="plain" systemItem="fixedSpace" id="nTk-ai-I4z"/>
+                                    <barButtonItem width="180" style="plain" systemItem="fixedSpace" id="nTk-ai-I4z"/>
                                     <barButtonItem title="Item" image="stick" id="mpO-uq-a6r">
                                         <color key="tintColor" red="0.84204987046632129" green="0.84204987046632129" blue="0.84204987046632129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-tf-3ko">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-tf-3ko">
                                 <rect key="frame" x="328" y="31" width="45" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Vks-OI-UeX"/>
-                                    <constraint firstAttribute="width" constant="45" id="zm3-VB-ulr"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -150,10 +147,7 @@
                             <constraint firstItem="WHe-OA-h3b" firstAttribute="leading" secondItem="GYD-wM-cLY" secondAttribute="leading" id="C6O-s7-fdE"/>
                             <constraint firstItem="WHe-OA-h3b" firstAttribute="trailing" secondItem="GYD-wM-cLY" secondAttribute="trailing" id="NON-vh-SDp"/>
                             <constraint firstItem="WHe-OA-h3b" firstAttribute="bottom" secondItem="GYD-wM-cLY" secondAttribute="bottom" id="Qlg-cI-1vD"/>
-                            <constraint firstItem="GYD-wM-cLY" firstAttribute="trailing" secondItem="XaE-tf-3ko" secondAttribute="trailing" constant="2" id="VuP-K6-Sax"/>
                             <constraint firstItem="WHe-OA-h3b" firstAttribute="top" secondItem="GYD-wM-cLY" secondAttribute="top" constant="42" id="XyO-Lb-fFu"/>
-                            <constraint firstItem="XaE-tf-3ko" firstAttribute="top" secondItem="GYD-wM-cLY" secondAttribute="top" constant="20" id="YgF-b1-S9a"/>
-                            <constraint firstItem="XaE-tf-3ko" firstAttribute="top" secondItem="GYD-wM-cLY" secondAttribute="top" constant="11" id="kf7-Pw-f1o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GYD-wM-cLY"/>
                     </view>

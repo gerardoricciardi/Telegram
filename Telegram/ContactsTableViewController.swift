@@ -66,6 +66,15 @@ class ContactsTableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height = 0.0
+        if section == 1{
+            height = 10
+            
+        }
+        return CGFloat(height)
+    }
+    
    
 
         

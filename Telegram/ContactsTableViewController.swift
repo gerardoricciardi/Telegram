@@ -10,9 +10,9 @@ import UIKit
 
 class ContactsTableViewController: UITableViewController {
     
-    var immagine1 = "sj"
+    var immagine1 = "gl"
     var immagine2 = "user"
-    var nome = "giorgia liguori"
+    var nome = "Giorgia Liguori"
     var numero = "8726348762384"
     var contatto = "martina"
     var accesso = "3 ore fa"

@@ -52,7 +52,7 @@ class ContactsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("pippo")
         
-
+/*
         if indexPath.section == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
         cell.immagine1?.image = UIImage(named : "i c")
@@ -75,7 +75,18 @@ class ContactsTableViewController: UITableViewController {
             cell.accesso?.text = accesso
             return cell
         }
-            
+            */
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
+        cell.immagine1?.image = UIImage(named : "sj")
+        
+        //cell.nome?.text = nome
+       // cell.numero?.text = numero
+        tableView.estimatedRowHeight = 36.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        // Configure the cell...
+        
+        return cell
     }
             
             

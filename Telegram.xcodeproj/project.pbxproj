@@ -27,7 +27,6 @@
 		8F9BB0F41F75808300CD4DB2 /* TableViewControllerChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BB0F31F75808300CD4DB2 /* TableViewControllerChat.swift */; };
 		E60B62171F7646E70065CFEA /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B62161F7646E70065CFEA /* ContactsTableViewController.swift */; };
 		E60B62191F7647000065CFEA /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B62181F7647000065CFEA /* ContactsTableViewCell.swift */; };
-		E60B621B1F764E730065CFEA /* ContactsTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B621A1F764E730065CFEA /* ContactsTableViewCell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		8F9BB0F31F75808300CD4DB2 /* TableViewControllerChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerChat.swift; sourceTree = "<group>"; };
 		E60B62161F7646E70065CFEA /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		E60B62181F7647000065CFEA /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
-		E60B621A1F764E730065CFEA /* ContactsTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +134,6 @@
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07EA00691F754FC000C18FD8 /* settings.storyboard */,
-				E60B621A1F764E730065CFEA /* ContactsTableViewCell2.swift */,
 				07C3372C1F759EE600973526 /* settings1TableViewCell.swift */,
 				07C336ED1F75618900973526 /* SettingsTableViewCell.swift */,
 				07C336EB1F75614700973526 /* SettingsTableViewController.swift */,
@@ -306,7 +303,6 @@
 			files = (
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
 				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
-				E60B621B1F764E730065CFEA /* ContactsTableViewCell2.swift in Sources */,
 				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,
 				07C3372D1F759EE600973526 /* settings1TableViewCell.swift in Sources */,
 				E60B62171F7646E70065CFEA /* ContactsTableViewController.swift in Sources */,

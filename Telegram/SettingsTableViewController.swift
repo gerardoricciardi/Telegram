@@ -20,6 +20,8 @@ class SettingsTableViewController: UITableViewController {
     let notifiche = ["Avviso", "Anteprima messaggio", "Suono"]
     let privacy = ["Utenti Bloccati", "Ultimo accesso", "Chiamate vocali"]
     let dati = ["Utilizzo archivio", "Utilizzo rete", "Chat Private", "Gruppi"]
+    let chiamate = ["Marino","Lucioni", "Vigorito", "Marino", "Marino", "Ceravolo"]
+    let sticker = ["Strega","A", "Gladiatore", "Pecora", "Tamburo", "Imbriani non mollare"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,6 +103,11 @@ class SettingsTableViewController: UITableViewController {
                 if checkRow == 0 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = notifiche
+                    //UIBarButtonItem(); newBackButton = UIBarButtonItem.init(title: "Notifiche", style: UIBarButtonItemStyleBordered, target: nil, action: nil)
+                    //destinationController.navigationItem.setLeftBarButton(newBackButton, animated: true)
+                  
+                    destinationController.navigationItem.backBarButtonItem?.title = "Notifiche"
+                    
                 }
                 if checkRow == 1 {
                     let destinationController = segue.destination as! DetailsTableViewController
@@ -109,6 +116,17 @@ class SettingsTableViewController: UITableViewController {
                 if checkRow == 2 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = dati
+                    
+                }
+                if checkRow == 3 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = chiamate
+                    
+                }
+                if checkRow == 4 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = sticker
+                    
                 }
                 
             }

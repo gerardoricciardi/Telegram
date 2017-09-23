@@ -65,18 +65,20 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nBK-Hr-gan">
+                                        <searchBar contentMode="redraw" barStyle="black" text="Search for contacts or usernsmes" translatesAutoresizingMaskIntoConstraints="NO" id="nBK-Hr-gan">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="0St-rc-7zg"/>
                                                 <constraint firstAttribute="width" constant="375" id="9Qd-pq-c5f"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="Cpe-0f-e31"/>
                                                 <constraint firstAttribute="height" constant="56" id="Nl3-9D-cv0"/>
                                             </constraints>
+                                            <color key="barTintColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi0-Oh-A9L">
-                                            <rect key="frame" x="35" y="107" width="60" height="86"/>
+                                            <rect key="frame" x="35" y="107" width="60" height="67"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="udJ-K1-9QX"/>
                                             </constraints>
@@ -104,18 +106,18 @@
                                     <outlet property="immagine1" destination="Vi0-Oh-A9L" id="E3y-Rn-QV1"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="71" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="242" width="375" height="71"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="65" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="242" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ofp-U5-av2" id="UVs-0p-nAY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-OJ-ZyV">
                                             <rect key="frame" x="109" y="19" width="120" height="20.5"/>
                                         </stackView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-pv-tjS">
-                                            <rect key="frame" x="35" y="8" width="32" height="52"/>
+                                            <rect key="frame" x="35" y="8" width="32" height="46"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-QV-jw6">
                                             <rect key="frame" x="109" y="8" width="120" height="35"/>

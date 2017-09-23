@@ -116,6 +116,13 @@ class SettingsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        if indexPath.section == 1{
+            
+        }
+        print("index path row \(indexPath.row)")
+        print("index path section \(indexPath.section)")
         /*
         
         
@@ -123,7 +130,7 @@ class SettingsTableViewController: UITableViewController {
         let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("storyBoardIdFor your new ViewController") as SecondViewController
         
         self.navigationController.pushViewController(secondViewController, animated: true)
- */
+         */
     }
 
     /*

@@ -19,13 +19,7 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-/*
-        let greyHeader = UIView()
-        greyHeader.backgroundColor = UIColor.gray
-        greyHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: view.frame.height)
-        
-        tableView.tableHeaderView = greyHeader
- */
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -59,20 +53,15 @@ class SettingsTableViewController: UITableViewController {
         if section == 1{
             grayHeader.backgroundColor = UIColor.gray
             grayHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: 30)
-            
-            print("header in section \(section)")
             grayHeader.isHidden = false
-        
         }
         return grayHeader
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = 0.0
         if section == 1{
             height = 10
-            
         }
         return CGFloat(height)
     }
@@ -104,11 +93,9 @@ class SettingsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue"{
             if let indexPath = tableView.indexPathForSelectedRow{
-                let destinationController = segue.destination as! Setting1RowViewController
-                // destinationController.restaurantName = immagini[indexPath.row]
-                //destinationController.locationName = location[indexPath.row]
-                //destinationController.typeName = type[indexPath.row]
-                destinationController.nome = "prova"
+                let destinationController = segue.destination as! DetailsTableViewController
+                destinationController.riga.append("Notifiche")
+                destinationController.riga.append("Privacy")
                 
                 
             }
@@ -121,8 +108,8 @@ class SettingsTableViewController: UITableViewController {
         if indexPath.section == 1{
             
         }
-        print("index path row \(indexPath.row)")
-        print("index path section \(indexPath.section)")
+        //print("index path row \(indexPath.row)")
+        //print("index path section \(indexPath.section)")
         /*
         
         

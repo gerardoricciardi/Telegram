@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0718773A1F76686C0088A411 /* Setting1RowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071877391F76686C0088A411 /* Setting1RowViewController.swift */; };
+		07B711681F76C70B00697D40 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B711671F76C70B00697D40 /* DetailsTableViewController.swift */; };
+		07B7116A1F76C81A00697D40 /* DetasilsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B711691F76C81A00697D40 /* DetasilsTableViewCell.swift */; };
 		07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336EB1F75614700973526 /* SettingsTableViewController.swift */; };
 		07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336ED1F75618900973526 /* SettingsTableViewCell.swift */; };
 		07C3372D1F759EE600973526 /* settings1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3372C1F759EE600973526 /* settings1TableViewCell.swift */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		071877391F76686C0088A411 /* Setting1RowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting1RowViewController.swift; sourceTree = "<group>"; };
+		07B711671F76C70B00697D40 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		07B711691F76C81A00697D40 /* DetasilsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetasilsTableViewCell.swift; sourceTree = "<group>"; };
 		07C336EB1F75614700973526 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		07C336ED1F75618900973526 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		07C3372C1F759EE600973526 /* settings1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings1TableViewCell.swift; sourceTree = "<group>"; };
@@ -142,9 +146,11 @@
 				8F18D48A1F75410600AB659F /* TableViewCell.swift */,
 				07DD42931F75397000244867 /* Main.storyboard */,
 				07EA00691F754FC000C18FD8 /* settings.storyboard */,
+				07B711691F76C81A00697D40 /* DetasilsTableViewCell.swift */,
 				07C3372C1F759EE600973526 /* settings1TableViewCell.swift */,
 				07C336ED1F75618900973526 /* SettingsTableViewCell.swift */,
 				07C336EB1F75614700973526 /* SettingsTableViewController.swift */,
+				07B711671F76C70B00697D40 /* DetailsTableViewController.swift */,
 				071877391F76686C0088A411 /* Setting1RowViewController.swift */,
 				07C337301F75C75F00973526 /* greyTableViewCell.swift */,
 				07DD42991F75397000244867 /* Assets.xcassets */,
@@ -310,6 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B711681F76C70B00697D40 /* DetailsTableViewController.swift in Sources */,
+				07B7116A1F76C81A00697D40 /* DetasilsTableViewCell.swift in Sources */,
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
 				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
 				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,

@@ -17,7 +17,6 @@ class ContactsTableViewController: UITableViewController {
     var nomeContatto = "martina"
     var accesso = "3 ore fa"
     
-    
     let section = ["1", "2"]
     let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
     
@@ -47,12 +46,9 @@ class ContactsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return self.items[section].count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("pippo")
-        
-
+       
         if indexPath.section == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
         cell.immagine1?.image = UIImage(named : "i c")
@@ -77,14 +73,7 @@ class ContactsTableViewController: UITableViewController {
         }
             
     }
-            
-            
         
-        
-        
-        
-        
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

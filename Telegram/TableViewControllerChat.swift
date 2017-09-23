@@ -55,6 +55,18 @@ class TableViewControllerChat: UITableViewController {
 
         return cell
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier=="messaggi"{
+            print("Metodo prepare....")
+            if let indexPath=tableView.indexPathForSelectedRow{
+                let destinationController=segue.destination as! MessageViewController
+                destinationController.stringFoto="sj"
+
+            }
+        }
+    }
  
 
     /*

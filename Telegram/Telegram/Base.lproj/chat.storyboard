@@ -82,7 +82,7 @@
                             <outlet property="delegate" destination="Ub1-4N-rmi" id="GJe-cQ-SJm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Chat" image="chat" id="8Oo-rG-wOH"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chatIcon" id="8Oo-rG-wOH"/>
                     <navigationItem key="navigationItem" title="Chats" id="Ng3-cf-VwX">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="w99-oP-Jxq"/>
                         <barButtonItem key="rightBarButtonItem" title="write" image="write" id="zGa-IG-S16"/>
@@ -111,7 +111,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chat" width="32" height="32"/>
+        <image name="chatIcon" width="40" height="40"/>
         <image name="write" width="32" height="32"/>
     </resources>
 </document>

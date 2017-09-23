@@ -75,7 +75,7 @@
                                 <connections>
                                     <outlet property="imageChat" destination="XBa-96-2pO" id="ySE-mG-nWT"/>
                                     <outlet property="imageStatoMessaggio" destination="1Hq-9s-rJh" id="U8s-bv-nFC"/>
-                                    <segue destination="S6j-yV-Y4I" kind="showDetail" identifier="messaggi" id="k8Y-Vd-M21"/>
+                                    <segue destination="S6j-yV-Y4I" kind="showDetail" id="TZt-FV-9LN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -122,7 +122,7 @@
                                     <barButtonItem title="Item" image="attach" id="44J-pL-e4z"/>
                                     <barButtonItem style="plain" id="S6Z-15-ejX">
                                         <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ZCH-hn-LfN">
-                                            <rect key="frame" x="53" y="7" width="235" height="30"/>
+                                            <rect key="frame" x="53" y="7" width="79" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="textColor" red="0.89981379533678751" green="0.89981379533678751" blue="0.89981379533678751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>

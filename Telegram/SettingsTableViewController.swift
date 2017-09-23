@@ -101,6 +101,19 @@ class SettingsTableViewController: UITableViewController {
         }
     }
  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationController = segue.destination as! Setting1RowViewController
+                // destinationController.restaurantName = immagini[indexPath.row]
+                //destinationController.locationName = location[indexPath.row]
+                //destinationController.typeName = type[indexPath.row]
+                destinationController.nome = "prova"
+                
+                
+            }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -11,14 +11,15 @@ import UIKit
 class ContactsTableViewController: UITableViewController {
     
     var immagine1 = "sj"
-    var immagine2 = "i c"
+    var immagine2 = "user"
     var nome = "giorgia liguori"
     var numero = "8726348762384"
-    var nomeContatto = "martina"
+    var contatto = "martina"
     var accesso = "3 ore fa"
     
     let section = ["1", "2"]
-    let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
+    
+    let items = [["profilo"], ["Martina Iammarino", "Daniela Zabatta", "Fabio Dell'infante", "Gerardo ricciardi", "Toni Pagliaro"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class ContactsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
         return self.items[section].count
     }
     
@@ -53,23 +55,32 @@ class ContactsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
         cell.immagine1?.image = UIImage(named : "i c")
         
-        cell.nome?.text = nome
-        cell.numero?.text = numero
-            tableView.estimatedRowHeight = 36.0
-            tableView.rowHeight = UITableViewAutomaticDimension
-       
-        // Configure the cell...
-
-        return cell
-    }
-        else  {
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
+        
+        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           
-            cell.immagine2?.image = UIImage(named : "sj")
-            cell.nomeContatto?.text = nomeContatto
-            cell.accesso?.text = accesso
-            return cell
+            if indexPath.section == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
+                cell.immagine1?.image = UIImage(named: immagine1)
+                cell.immagine1.layer.cornerRadius = 30.0
+                cell.immagine1.clipsToBounds = true
+                
+                cell.nome?.text = nome
+                cell.numero?.text = numero
+                
+                tableView.estimatedRowHeight = 36.0
+                tableView.rowHeight = UITableViewAutomaticDimension
+                //set the data here
+                
+                return cell
+            }
+            else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
+                
+                
+               // cell.contatto.text = items[indexPath.section][indexPath.row]
+                cell.immagine2?.image = UIImage (named : immagine2)
+                return cell
+            }
         }
             
     }

@@ -10,11 +10,8 @@ import UIKit
 
 class ContactsTableViewCell2: UITableViewCell {
     
-    @IBOutlet var immagine2: UIImageView!
-    @IBOutlet var nomeContatto : UILabel!
-    @IBOutlet var accesso : UILabel!
-    
-    
+    @IBOutlet weak var contatto: UILabel!
+     @IBOutlet weak var immagine2: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

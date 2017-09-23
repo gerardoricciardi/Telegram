@@ -169,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="1084" y="-421.43928035982015"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Nuovo Contatto-->
         <scene sceneID="GmD-NN-MgS">
             <objects>
                 <tableViewController id="gLc-6D-wam" sceneMemberID="viewController">
@@ -192,6 +192,7 @@
                             <outlet property="delegate" destination="gLc-6D-wam" id="B0u-du-BYH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Nuovo Contatto" id="eGJ-ej-GdA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5r-BK-jKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

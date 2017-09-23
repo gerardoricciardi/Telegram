@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="FDl-zc-LtX">
-                                            <rect key="frame" x="136" y="23" width="128.5" height="36.5"/>
+                                            <rect key="frame" x="123" y="23" width="128.5" height="36.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3pF-aK-PjH">
                                                     <rect key="frame" x="0.0" y="0.0" width="128.5" height="20.5"/>
@@ -66,7 +66,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="eB8-b2-u9i" firstAttribute="leading" secondItem="V4b-uu-Sdc" secondAttribute="leading" constant="33" id="391-1X-ppa"/>
-                                        <constraint firstItem="FDl-zc-LtX" firstAttribute="leading" secondItem="eB8-b2-u9i" secondAttribute="trailing" constant="43" id="3om-5n-JyY"/>
+                                        <constraint firstItem="FDl-zc-LtX" firstAttribute="leading" secondItem="eB8-b2-u9i" secondAttribute="trailing" constant="30" id="3om-5n-JyY"/>
                                         <constraint firstItem="FDl-zc-LtX" firstAttribute="top" secondItem="V4b-uu-Sdc" secondAttribute="topMargin" constant="15" id="7yZ-Mg-4xC"/>
                                         <constraint firstItem="eB8-b2-u9i" firstAttribute="top" secondItem="V4b-uu-Sdc" secondAttribute="top" constant="12" id="ebg-pn-hqp"/>
                                         <constraint firstAttribute="bottom" secondItem="eB8-b2-u9i" secondAttribute="bottom" constant="17.5" id="w9G-LB-12x"/>
@@ -78,22 +78,8 @@
                                     <outlet property="secondNameUser" destination="pkK-FX-HGH" id="y3T-vd-e5q"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="SettingCellGreen" rowHeight="10" id="kRE-m0-foA" customClass="greyTableViewCell" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="118" width="375" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kRE-m0-foA" id="cvQ-8y-dGj" customClass="greenTableViewCell" customModule="Telegram" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="9.5"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                </accessibility>
-                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell1" rowHeight="35" id="db2-o1-lc1" customClass="settings1TableViewCell" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="118" width="375" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="db2-o1-lc1" id="3As-xv-Ztq">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="34.5"/>
@@ -125,6 +111,7 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="MuW-8Z-LOK" id="iWy-xG-EgM"/>
                             <outlet property="delegate" destination="MuW-8Z-LOK" id="4YY-VA-Gbf"/>

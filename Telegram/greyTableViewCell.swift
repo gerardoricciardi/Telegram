@@ -1,21 +1,15 @@
 //
-//  ContactsTableViewCell.swift
+//  greyTableViewCell.swift
 //  Telegram
 //
-//  Created by Liguori Giorgia on 23/09/17.
+//  Created by Ricciardi Gerardo on 23/09/17.
 //  Copyright © 2017 Ricciardi Gerardo. All rights reserved.
 //
 
 import UIKit
 
-class ContactsTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var immagine1: UIImageView!
-    @IBOutlet var nome : UILabel!
-    @IBOutlet var numero : UILabel!
-    
-    
-    
+class greyTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,4 +21,5 @@ class ContactsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    
 }

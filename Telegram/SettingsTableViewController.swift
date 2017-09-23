@@ -13,9 +13,19 @@ class SettingsTableViewController: UITableViewController {
     var imageUtente = "imageUtente"
     var firstNameUser = "Gerardo"
     var secondNameUser = "Ricciardi"
+    
+    let section = ["1","2"]
+    let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+/*
+        let greyHeader = UIView()
+        greyHeader.backgroundColor = UIColor.gray
+        greyHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: view.frame.height)
+        
+        tableView.tableHeaderView = greyHeader
+ */
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,26 +42,63 @@ class SettingsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return section.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+       
+        return self.items[section].count
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SettingsTableViewCell
-        cell.imageUtente?.image = UIImage(named: imageUtente)
-        cell.imageUtente.layer.cornerRadius = 30.0
-        cell.imageUtente.clipsToBounds = true
-        cell.firstNameUser.text = firstNameUser
-        cell.secondNameUser.text = secondNameUser
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+       
         
-        // Configure the cell...
-
-        return cell
+        let grayHeader = UIView()
+        grayHeader.isHidden = true
+        if section == 1{
+            grayHeader.backgroundColor = UIColor.gray
+            grayHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: 30)
+            
+            print("header in section \(section)")
+            grayHeader.isHidden = false
+        
+        }
+        return grayHeader
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height = 0.0
+        if section == 1{
+            height = 10
+            
+        }
+        return CGFloat(height)
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as! SettingsTableViewCell
+            cell.imageUtente?.image = UIImage(named: imageUtente)
+            cell.imageUtente.layer.cornerRadius = 30.0
+            cell.imageUtente.clipsToBounds = true
+            
+            cell.firstNameUser.text = firstNameUser
+            cell.secondNameUser.text = secondNameUser
+            
+            tableView.estimatedRowHeight = 36.0
+            tableView.rowHeight = UITableViewAutomaticDimension
+            //set the data here
+            
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell1", for: indexPath) as! settings1TableViewCell
+            //set the data here
+            cell.nameOfSetting.text = items[indexPath.section][indexPath.row]
+            return cell
+        }
     }
  
 

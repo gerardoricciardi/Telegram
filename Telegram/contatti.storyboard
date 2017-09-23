@@ -8,40 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contacts-->
-        <scene sceneID="BSe-ur-twm">
-            <objects>
-                <tableViewController id="BHh-ij-jWI" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K1R-sb-pvs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellChat" rowHeight="74" id="ElS-LN-VI4" customClass="TableViewCellChat" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="74"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ElS-LN-VI4" id="A9J-9H-My4">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="BHh-ij-jWI" id="sXF-WN-Rpv"/>
-                            <outlet property="delegate" destination="BHh-ij-jWI" id="659-pO-F6f"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Contacts" id="bE3-R9-9LA"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8s8-dZ-d2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1093.5999999999999" y="-419.64017991004499"/>
-        </scene>
         <!--contatti-->
         <scene sceneID="t4S-MV-h3h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jno-5q-I1s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="contatti" id="Mb5-QZ-d1M"/>
+                    <tabBarItem key="tabBarItem" title="contatti" image="user" id="Mb5-QZ-d1M"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LSN-qc-BXO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -49,12 +20,62 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BHh-ij-jWI" kind="relationship" relationship="rootViewController" id="J6M-Ex-VJ1"/>
+                        <segue destination="9Ct-rd-Kq2" kind="relationship" relationship="rootViewController" id="DJg-E0-7Qb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzm-Va-6dR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244" y="-420"/>
         </scene>
+        <!--Contacts Table View Controller-->
+        <scene sceneID="kQP-a7-rWu">
+            <objects>
+                <tableViewController id="9Ct-rd-Kq2" customClass="ContactsTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zhj-7y-ClX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="100" id="wpd-Zc-VhT" customClass="ContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpd-Zc-VhT" id="RKu-6Y-wXY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vi0-Oh-A9L">
+                                            <rect key="frame" x="35" y="19" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Uev-L1-qaJ"/>
+                                                <constraint firstAttribute="width" constant="60" id="udJ-K1-9QX"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Vi0-Oh-A9L" secondAttribute="bottom" constant="20.5" id="BPe-YY-2yB"/>
+                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="RKu-6Y-wXY" secondAttribute="top" constant="19" id="KLg-KI-edf"/>
+                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leading" constant="35" id="PHn-bq-1WW"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="280" id="SrJ-zK-byc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="immagine1" destination="Vi0-Oh-A9L" id="E3y-Rn-QV1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Ct-rd-Kq2" id="5Rx-QI-sVq"/>
+                            <outlet property="delegate" destination="9Ct-rd-Kq2" id="DxF-oZ-l6H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DAM-W7-fZ0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMd-9F-L2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-421.43928035982015"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="user" width="32" height="32"/>
+    </resources>
 </document>

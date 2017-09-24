@@ -16,7 +16,7 @@ class ContactsTableViewController: UITableViewController{
     var immagine1 = "gl"
     var immagini = ["add","user1","user2","user3","user4","user5","user6"]
     var nome = "Giorgia Liguori"
-    var numero = "8726348762384"
+    var numero = "+39 33983748"
     var searchController : UISearchController!
     var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
     let section = ["1", "2"]

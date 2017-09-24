@@ -19,12 +19,12 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
     var numero = "+39 33983748"
     var searchController : UISearchController!
     var searchResult :[Contatto]!
-//    var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
+//    var accesso = [" ", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
    let section = ["1", "2"]
     
     
     
-    var contatti :[Contatto]=[Contatto(nome:"Invite Friends",foto:"add",accesso:"last seen 2 minutes ago"),
+    var contatti :[Contatto]=[Contatto(nome:"Invite Friends",foto:"add",accesso:""),
               Contatto(nome:"Martina Iammarino",foto:"user1",accesso:"last seen 2 minutes ago"),
               Contatto(nome:"Daniela Zabatta",foto:"user2",accesso:"last seen 25 minutes ago"),
               Contatto(nome:"Fabio Dell'Infante",foto:"user3",accesso:"last seen 5 minutes ago"),

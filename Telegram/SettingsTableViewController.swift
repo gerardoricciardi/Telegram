@@ -20,10 +20,14 @@ class SettingsTableViewController: UITableViewController {
     let notifiche = ["Avviso", "Anteprima messaggio", "Suono"]
     let privacy = ["Utenti Bloccati", "Ultimo accesso", "Chiamate vocali"]
     let dati = ["Utilizzo archivio", "Utilizzo rete", "Chat Private", "Gruppi"]
+    let chiamate = ["Marino","Lucioni", "Vigorito", "Marino", "Marino", "Ceravolo"]
+    let sticker = ["Strega","A", "Gladiatore", "Pecora", "Tamburo", "Imbriani non mollare"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if  let topItem = self.navigationController?.navigationBar.topItem {
+            topItem.backBarButtonItem = UIBarButtonItem(title: "Indietro", style: .plain, target: nil, action: nil)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -50,8 +54,6 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       
-        
         let grayHeader = UIView()
         grayHeader.isHidden = true
         if section == 1{
@@ -101,16 +103,28 @@ class SettingsTableViewController: UITableViewController {
                 if checkRow == 0 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = notifiche
+                    destinationController.title = items[indexPath.section][indexPath.row]
                 }
                 if checkRow == 1 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = privacy
+                    destinationController.title = items[indexPath.section][indexPath.row]
                 }
                 if checkRow == 2 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = dati
+                    destinationController.title = items[indexPath.section][indexPath.row]
                 }
-                
+                if checkRow == 3 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = chiamate
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
+                if checkRow == 4 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = sticker
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
             }
         }
     }

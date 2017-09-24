@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -65,7 +66,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <searchBar contentMode="redraw" barStyle="black" text="Search for contacts or usernames" translatesAutoresizingMaskIntoConstraints="NO" id="nBK-Hr-gan">
+                                        <searchBar contentMode="redraw" barStyle="black" placeholder="Search for contacts or usernames" translatesAutoresizingMaskIntoConstraints="NO" id="nBK-Hr-gan">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
@@ -75,29 +76,30 @@
                                                 <constraint firstAttribute="height" constant="56" id="Nl3-9D-cv0"/>
                                             </constraints>
                                             <color key="barTintColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </searchBar>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi0-Oh-A9L">
                                             <rect key="frame" x="28" y="71" width="82" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="60" id="udJ-K1-9QX"/>
+                                                <constraint firstAttribute="width" constant="68" id="udJ-K1-9QX"/>
                                             </constraints>
+                                            <viewLayoutGuide key="safeArea" id="HF7-4h-u5e"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="08I-7k-131"/>
                                         <constraint firstAttribute="trailing" secondItem="nBK-Hr-gan" secondAttribute="trailing" id="0T0-7Y-iPA"/>
-                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="45" id="AB8-Mz-aca"/>
+                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="25" id="AB8-Mz-aca"/>
                                         <constraint firstItem="nBK-Hr-gan" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leading" id="BU4-5G-u7Z"/>
-                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="26" id="GUd-5z-u6V"/>
+                                        <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="GUd-5z-u6V"/>
                                         <constraint firstItem="Vi0-Oh-A9L" firstAttribute="leading" secondItem="RKu-6Y-wXY" secondAttribute="leadingMargin" constant="15" id="J6f-4J-O5X"/>
-                                        <constraint firstAttribute="trailing" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="280" id="SrJ-zK-byc"/>
-                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="45" id="TZQ-JP-CJP"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="284" id="SrJ-zK-byc"/>
+                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="25" id="TZQ-JP-CJP"/>
                                         <constraint firstItem="Vi0-Oh-A9L" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="Zvl-qW-f7X"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="17Q-PR-W2Z" secondAttribute="trailing" constant="107" id="alQ-jE-3Dq"/>
                                         <constraint firstItem="17Q-PR-W2Z" firstAttribute="top" secondItem="nBK-Hr-gan" secondAttribute="bottom" constant="33" id="hD4-9b-cxv"/>
                                         <constraint firstItem="nBK-Hr-gan" firstAttribute="top" secondItem="RKu-6Y-wXY" secondAttribute="top" id="hNj-ah-oYW"/>
-                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="33" id="lHL-5l-kjc"/>
+                                        <constraint firstItem="17Q-PR-W2Z" firstAttribute="leading" secondItem="Vi0-Oh-A9L" secondAttribute="trailing" constant="25" id="lHL-5l-kjc"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Vi0-Oh-A9L" secondAttribute="bottom" constant="20.5" id="nrp-Ei-EOC"/>
                                     </constraints>
                                 </tableViewCellContentView>

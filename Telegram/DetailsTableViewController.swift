@@ -14,7 +14,7 @@ class DetailsTableViewController: UITableViewController {
     var riga: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

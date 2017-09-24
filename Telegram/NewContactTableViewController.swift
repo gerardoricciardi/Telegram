@@ -10,8 +10,8 @@ import UIKit
 
 class NewContactTableViewController: UITableViewController {
 
-    var immagine = "user1"
-    var label = "Giorgia"
+    var immagine = ""
+    var label = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,20 +32,26 @@ class NewContactTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return CGFloat(150)
+        }
+        else{
+            return CGFloat(50)
+        }
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-  let cell = tableView.dequeueReusableCell(withIdentifier: "NewContactsCell", for: indexPath) as! NewContactsTableViewCell
-        
-        print("sono qui")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NewContactsCell", for: indexPath) as! NewContactsTableViewCell
         cell.label?.text = label
         cell.immagine.image = UIImage(named: immagine)
         //cell.immagine.layer.cornerRadius = 30.0

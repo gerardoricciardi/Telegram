@@ -25,9 +25,13 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    /*
         if  let topItem = self.navigationController?.navigationBar.topItem {
             topItem.backBarButtonItem = UIBarButtonItem(title: "Indietro", style: .plain, target: nil, action: nil)
         }
+ */
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -57,7 +61,7 @@ class SettingsTableViewController: UITableViewController {
         let grayHeader = UIView()
         grayHeader.isHidden = true
         if section == 1{
-            grayHeader.backgroundColor = UIColor.gray
+            grayHeader.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
             grayHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: 30)
             grayHeader.isHidden = false
         }

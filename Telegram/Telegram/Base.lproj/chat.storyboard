@@ -91,7 +91,7 @@
                                     <outlet property="imageStatoMessaggio" destination="1Hq-9s-rJh" id="U8s-bv-nFC"/>
                                     <outlet property="lastMessage" destination="s8u-uS-2R4" id="eu7-3D-tbu"/>
                                     <outlet property="nomeContatto" destination="Rv3-zJ-12c" id="txA-yM-lSO"/>
-                                    <segue destination="ROH-52-D1u" kind="showDetail" identifier="messaggi" action="showViewController:sender:" id="Clb-lb-Ome"/>
+                                    <segue destination="ROH-52-D1u" kind="show" identifier="messaggi" animates="NO" id="Clb-lb-Ome"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -142,9 +142,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" image="attach" id="rkw-vM-yCB"/>
-                                    <barButtonItem width="200" style="plain" id="Rhx-nR-iHm">
+                                    <barButtonItem style="plain" id="Rhx-nR-iHm">
                                         <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="mEd-Yo-yyf">
-                                            <rect key="frame" x="53" y="7" width="25" height="30"/>
+                                            <rect key="frame" x="53" y="7" width="233" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>

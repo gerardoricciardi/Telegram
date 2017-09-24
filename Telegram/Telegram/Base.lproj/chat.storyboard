@@ -91,7 +91,7 @@
                                     <outlet property="imageStatoMessaggio" destination="1Hq-9s-rJh" id="U8s-bv-nFC"/>
                                     <outlet property="lastMessage" destination="s8u-uS-2R4" id="eu7-3D-tbu"/>
                                     <outlet property="nomeContatto" destination="Rv3-zJ-12c" id="txA-yM-lSO"/>
-                                    <segue destination="S6j-yV-Y4I" kind="showDetail" id="TZt-FV-9LN"/>
+                                    <segue destination="ROH-52-D1u" kind="showDetail" identifier="messaggi" action="showViewController:sender:" id="Clb-lb-Ome"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -100,7 +100,7 @@
                             <outlet property="delegate" destination="Ub1-4N-rmi" id="GJe-cQ-SJm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Chat" image="chatIcon" id="8Oo-rG-wOH"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chatIcon" selectedImage="chatIcon" id="8Oo-rG-wOH"/>
                     <navigationItem key="navigationItem" title="Chats" id="Ng3-cf-VwX">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="w99-oP-Jxq"/>
                         <barButtonItem key="rightBarButtonItem" title="write" image="write" id="zGa-IG-S16"/>
@@ -111,69 +111,68 @@
             </objects>
             <point key="canvasLocation" x="559" y="-63"/>
         </scene>
-        <!--MessageViewController-->
-        <scene sceneID="Vvj-0c-vTF">
+        <!--Message View Controller-->
+        <scene sceneID="SUa-bR-Hdx">
             <objects>
-                <viewController title="MessageViewController" id="S6j-yV-Y4I" customClass="MessageViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XeW-As-5ZG">
+                <viewController id="ROH-52-D1u" customClass="MessageViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mFs-nH-gOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telegramBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WHe-OA-h3b">
-                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqT-sD-2Kb">
+                                <rect key="frame" x="158" y="16" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-uX-yd0">
+                                <rect key="frame" x="158" y="35" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telegramBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Hbr-4j-Esl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytj-vn-gie">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIN-Ib-Cyq">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="attach" id="44J-pL-e4z">
-                                        <color key="tintColor" red="0.84204987046632129" green="0.84204987046632129" blue="0.84204987046632129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </barButtonItem>
-                                    <barButtonItem width="100" style="plain" id="S6Z-15-ejX">
-                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Message" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="ZCH-hn-LfN">
-                                            <rect key="frame" x="53" y="7" width="233" height="30"/>
+                                    <barButtonItem title="Item" image="attach" id="rkw-vM-yCB"/>
+                                    <barButtonItem width="200" style="plain" id="Rhx-nR-iHm">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="mEd-Yo-yyf">
+                                            <rect key="frame" x="53" y="7" width="25" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="textColor" red="0.89981379533678751" green="0.89981379533678751" blue="0.89981379533678751" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </barButtonItem>
-                                    <barButtonItem width="180" style="plain" systemItem="fixedSpace" id="nTk-ai-I4z"/>
-                                    <barButtonItem title="Item" image="stick" id="mpO-uq-a6r">
-                                        <color key="tintColor" red="0.84204987046632129" green="0.84204987046632129" blue="0.84204987046632129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </barButtonItem>
+                                    <barButtonItem width="205" style="plain" systemItem="fixedSpace" id="uIC-EG-5j4"/>
+                                    <barButtonItem title="Item" image="stick" width="174" id="8gP-K6-hbv"/>
                                 </items>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GW-QW-dOh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="gM4-yE-hcP">
-                                        <barButtonItem key="backBarButtonItem" title="Chats" id="eet-v6-E6o"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sj" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-Ni-mQu">
-                                <rect key="frame" x="315" y="2" width="44" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQ8-KM-iqq">
+                                <rect key="frame" x="317" y="16" width="45" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="WHe-OA-h3b" firstAttribute="leading" secondItem="GYD-wM-cLY" secondAttribute="leading" id="C6O-s7-fdE"/>
-                            <constraint firstItem="WHe-OA-h3b" firstAttribute="trailing" secondItem="GYD-wM-cLY" secondAttribute="trailing" id="NON-vh-SDp"/>
-                            <constraint firstItem="WHe-OA-h3b" firstAttribute="bottom" secondItem="GYD-wM-cLY" secondAttribute="bottom" id="Qlg-cI-1vD"/>
-                            <constraint firstItem="WHe-OA-h3b" firstAttribute="top" secondItem="GYD-wM-cLY" secondAttribute="top" constant="42" id="XyO-Lb-fFu"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="GYD-wM-cLY"/>
+                        <viewLayoutGuide key="safeArea" id="KrH-rc-jAU"/>
                     </view>
                     <connections>
-                        <outlet property="profilePhoto" destination="RAx-Ni-mQu" id="zf1-av-Vf7"/>
+                        <outlet property="accessoLabel" destination="U3C-uX-yd0" id="q3U-2S-Xv5"/>
+                        <outlet property="nomeContattoLabel" destination="kqT-sD-2Kb" id="hZa-xW-We5"/>
+                        <outlet property="profilePhoto" destination="oQ8-KM-iqq" id="svc-eu-kMo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovk-Dj-WiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cN-6l-h7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725.5999999999999" y="46.326836581709152"/>
+            <point key="canvasLocation" x="1757.5999999999999" y="-35.532233883058474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JOb-ba-JZ7">
@@ -195,7 +194,6 @@
     <resources>
         <image name="attach" width="32" height="32"/>
         <image name="chatIcon" width="40" height="40"/>
-        <image name="sj" width="50" height="50"/>
         <image name="stick" width="50" height="50"/>
         <image name="telegramBackground" width="236" height="369"/>
         <image name="write" width="32" height="32"/>

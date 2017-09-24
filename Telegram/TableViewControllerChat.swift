@@ -87,7 +87,12 @@ class TableViewControllerChat: UITableViewController,UISearchResultsUpdating {
             print("Metodo prepare....")
             if let indexPath=tableView.indexPathForSelectedRow{
                 let destinationController=segue.destination as! MessageViewController
-                destinationController.stringFoto="sj"
+            destinationController.stringFoto=contatti[indexPath.row].foto
+                print(contatti[indexPath.row].nome)
+                destinationController.nomeContatto=contatti[indexPath.row].nome
+//            destinationController.accesso=contatti[indexPath.row].accesso
+                destinationController.stringFoto=contatti[indexPath.row].foto
+                
 
             }
         }

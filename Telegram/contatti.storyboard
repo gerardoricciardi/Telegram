@@ -232,9 +232,75 @@
             </objects>
             <point key="canvasLocation" x="2276" y="-421"/>
         </scene>
+        <!--Message View Controller-->
+        <scene sceneID="vXC-MB-FGT">
+            <objects>
+                <viewController storyboardIdentifier="chat" hidesBottomBarWhenPushed="YES" id="IQ0-bE-WYw" customClass="MessageViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LK-Lp-pQO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp2-Qj-he1">
+                                <rect key="frame" x="158" y="16" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmh-uu-hIZ">
+                                <rect key="frame" x="158" y="35" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telegramBackground" translatesAutoresizingMaskIntoConstraints="NO" id="XYx-VW-6Ti">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H00-ab-yu2">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="attach" id="vM8-6d-SZV"/>
+                                    <barButtonItem style="plain" id="aKN-Oz-IEy">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="usi-Pd-HW1">
+                                            <rect key="frame" x="53" y="7" width="25" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem width="205" style="plain" systemItem="fixedSpace" id="Q2G-15-eGK"/>
+                                    <barButtonItem title="Item" image="stick" width="174" id="wze-ZB-3Qi"/>
+                                </items>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGU-vX-tiQ">
+                                <rect key="frame" x="317" y="16" width="45" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="FAM-Pn-cIO"/>
+                    </view>
+                    <connections>
+                        <outlet property="accessoLabel" destination="Zmh-uu-hIZ" id="Eks-yM-h9v"/>
+                        <outlet property="nomeContattoLabel" destination="Xp2-Qj-he1" id="Vfm-sL-D0O"/>
+                        <outlet property="profilePhoto" destination="PGU-vX-tiQ" id="QBd-13-BHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUY-OW-ERw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2276" y="291"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="attach" width="32" height="32"/>
         <image name="defaultphoto" width="640" height="640"/>
+        <image name="stick" width="50" height="50"/>
+        <image name="telegramBackground" width="236" height="369"/>
         <image name="user" width="32" height="32"/>
     </resources>
 </document>

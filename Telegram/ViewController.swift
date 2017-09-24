@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var titol = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = titol
         // Do any additional setup after loading the view, typically from a nib.
     }
 

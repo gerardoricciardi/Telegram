@@ -139,6 +139,15 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
             }
         }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row != 0{
+            let viewController1 = storyboard?.instantiateViewController(withIdentifier: "chat") as! MessageViewController
+            viewController1.nomeContatto = contatti[indexPath.row].nome
+            print(contatti[indexPath.row].nome)
+            self.navigationController?.pushViewController(viewController1, animated: true)
+        }
+    }
     
     func filterContent(for searchText: String){
         //        la funzione filter riceve come input una funzione da usare per implementare un filtro
@@ -160,7 +169,7 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addContact"{
-            let destinationController = segue.destination as! NewContactViewController
+            //let destinationController = segue.destination as! NewContactViewController
             //destinationController.immagine = "user1"
             //destinationController.label = "Giorgia"
             

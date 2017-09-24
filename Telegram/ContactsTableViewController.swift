@@ -128,7 +128,7 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
                 searchResult[indexPath.row] : contatti[indexPath.row]
 
                 cell.accesso!.text=contatto.accesso
-            cell.contatto!.text=contatto.nome
+                cell.contatto!.text=contatto.nome
                 cell.immagine2?.image=UIImage(named :contatto.foto)
                 
 //              cell.accesso.text = accesso [indexPath.row]

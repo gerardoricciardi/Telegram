@@ -12,6 +12,8 @@ class TableViewCellChat: UITableViewCell {
     
     @IBOutlet var imageChat : UIImageView!
     @IBOutlet var imageStatoMessaggio : UIImageView!
+    @IBOutlet var nomeContatto : UILabel!
+    @IBOutlet var lastMessage : UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

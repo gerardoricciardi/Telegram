@@ -39,7 +39,11 @@
                                             <rect key="frame" x="8" y="8" width="60" height="54"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XBa-96-2pO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="54"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="09D-Bl-8RH"/>
+                                                        <constraint firstAttribute="height" constant="50" id="h01-Aj-2Zq"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
@@ -84,6 +88,8 @@
                                 <connections>
                                     <outlet property="imageChat" destination="XBa-96-2pO" id="ySE-mG-nWT"/>
                                     <outlet property="imageStatoMessaggio" destination="1Hq-9s-rJh" id="U8s-bv-nFC"/>
+                                    <outlet property="lastMessage" destination="s8u-uS-2R4" id="eu7-3D-tbu"/>
+                                    <outlet property="nomeContatto" destination="Rv3-zJ-12c" id="txA-yM-lSO"/>
                                     <segue destination="S6j-yV-Y4I" kind="showDetail" id="TZt-FV-9LN"/>
                                 </connections>
                             </tableViewCell>

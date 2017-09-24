@@ -32,6 +32,8 @@
 		E60B62171F7646E70065CFEA /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B62161F7646E70065CFEA /* ContactsTableViewController.swift */; };
 		E60B62191F7647000065CFEA /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B62181F7647000065CFEA /* ContactsTableViewCell.swift */; };
 		E60B621F1F7678E80065CFEA /* ContactsTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B621E1F7678E80065CFEA /* ContactsTableViewCell2.swift */; };
+		E6FAC9EF1F76DC18007E0203 /* NewContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAC9EE1F76DC18007E0203 /* NewContactsTableViewCell.swift */; };
+		E6FAC9F11F76DC34007E0203 /* NewContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FAC9F01F76DC34007E0203 /* NewContactTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		E60B62161F7646E70065CFEA /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		E60B62181F7647000065CFEA /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 		E60B621E1F7678E80065CFEA /* ContactsTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell2.swift; sourceTree = "<group>"; };
+		E6FAC9EE1F76DC18007E0203 /* NewContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactsTableViewCell.swift; sourceTree = "<group>"; };
+		E6FAC9F01F76DC34007E0203 /* NewContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				07DD428F1F75397000244867 /* AppDelegate.swift */,
 				07DD42911F75397000244867 /* ViewController.swift */,
 				07EA00621F754A9000C18FD8 /* contatti.storyboard */,
+				E6FAC9EE1F76DC18007E0203 /* NewContactsTableViewCell.swift */,
+				E6FAC9F01F76DC34007E0203 /* NewContactTableViewController.swift */,
 				E60B621E1F7678E80065CFEA /* ContactsTableViewCell2.swift */,
 				E60B62161F7646E70065CFEA /* ContactsTableViewController.swift */,
 				E60B62181F7647000065CFEA /* ContactsTableViewCell.swift */,
@@ -319,11 +325,13 @@
 				07B711681F76C70B00697D40 /* DetailsTableViewController.swift in Sources */,
 				07B7116A1F76C81A00697D40 /* DetasilsTableViewCell.swift in Sources */,
 				07DD42981F75397000244867 /* Telegram.xcdatamodeld in Sources */,
+				E6FAC9EF1F76DC18007E0203 /* NewContactsTableViewCell.swift in Sources */,
 				07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */,
 				07C336EE1F75618900973526 /* SettingsTableViewCell.swift in Sources */,
 				07C3372D1F759EE600973526 /* settings1TableViewCell.swift in Sources */,
 				E60B62171F7646E70065CFEA /* ContactsTableViewController.swift in Sources */,
 				8F18D48B1F75410600AB659F /* TableViewCell.swift in Sources */,
+				E6FAC9F11F76DC34007E0203 /* NewContactTableViewController.swift in Sources */,
 				8F7C0D1E1F767DFA0021C4E5 /* MessageViewController.swift in Sources */,
 				8F9BB0F01F757FE800CD4DB2 /* TableViewCellChat.swift in Sources */,
 				07C337311F75C75F00973526 /* greyTableViewCell.swift in Sources */,

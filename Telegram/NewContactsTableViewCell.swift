@@ -1,5 +1,5 @@
 //
-//  ContactsTableViewCell2.swift
+//  NewContactsTableViewCell.swift
 //  Telegram
 //
 //  Created by Liguori Giorgia on 23/09/17.
@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ContactsTableViewCell2: UITableViewCell {
-    @IBOutlet weak var searchBar : UISearchBar!
-    @IBOutlet weak var contatto: UILabel!
-    @IBOutlet weak var accesso: UILabel!
-     @IBOutlet weak var immagine2: UIImageView!
-    
+ 
+
+class NewContactsTableViewCell: UITableViewCell {
+@IBOutlet weak var immagine: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

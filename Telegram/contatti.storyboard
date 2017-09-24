@@ -37,15 +37,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="178" id="wpd-Zc-VhT" customClass="ContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="178"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="151" id="wpd-Zc-VhT" customClass="ContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpd-Zc-VhT" id="RKu-6Y-wXY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="177.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="17Q-PR-W2Z">
-                                            <rect key="frame" x="116" y="89" width="144" height="35"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="17Q-PR-W2Z">
+                                            <rect key="frame" x="148" y="89" width="144" height="35"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NomeCognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-BX-j3C">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
@@ -78,7 +78,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vi0-Oh-A9L">
-                                            <rect key="frame" x="23" y="89" width="68" height="60"/>
+                                            <rect key="frame" x="28" y="71" width="82" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="udJ-K1-9QX"/>
                                             </constraints>
@@ -108,7 +108,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactsCell2" rowHeight="57" id="Ofp-U5-av2" customClass="ContactsTableViewCell2" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="206" width="375" height="57"/>
+                                <rect key="frame" x="0.0" y="179" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ofp-U5-av2" id="UVs-0p-nAY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
@@ -122,26 +122,27 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pj9-d6-oOM">
-                                            <rect key="frame" x="93" y="8" width="200" height="35"/>
+                                            <rect key="frame" x="93" y="8" width="260" height="37"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NomeCognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zz-Kk-l8X">
-                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="accesso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzW-AQ-fdv">
-                                                    <rect key="frame" x="0.0" y="20.5" width="200" height="14.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="accesso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzW-AQ-fdv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="37"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="i1I-Hr-CHd"/>
-                                                <constraint firstAttribute="width" constant="200" id="mOy-6d-1wZ"/>
+                                                <constraint firstAttribute="height" constant="37" id="i1I-Hr-CHd"/>
+                                                <constraint firstAttribute="width" constant="260" id="mOy-6d-1wZ"/>
                                             </constraints>
                                         </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NomeCognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zz-Kk-l8X">
+                                            <rect key="frame" x="93" y="0.0" width="200" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="pj9-d6-oOM" firstAttribute="top" secondItem="UVs-0p-nAY" secondAttribute="top" constant="8" id="0Bu-9h-5rM"/>
@@ -184,19 +185,37 @@
         <!--Nuovo Contatto-->
         <scene sceneID="GmD-NN-MgS">
             <objects>
-                <tableViewController id="gLc-6D-wam" sceneMemberID="viewController">
+                <tableViewController id="gLc-6D-wam" customClass="NewContactTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bHA-0c-fhp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QBf-sr-v9b">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewContacstCell" rowHeight="161" id="QBf-sr-v9b" customClass="NewContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="161"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QBf-sr-v9b" id="Ts7-H1-M7w">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QBf-sr-v9b" id="Ts7-H1-M7w" customClass="NewContactsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="xYu-F2-BfV">
+                                            <rect key="frame" x="26" y="26" width="82" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="82" id="uFw-ci-5tz"/>
+                                                <constraint firstAttribute="height" constant="80" id="xYo-hK-OaV"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xYu-F2-BfV" firstAttribute="top" secondItem="Ts7-H1-M7w" secondAttribute="topMargin" constant="18" id="AEH-0a-KZg"/>
+                                        <constraint firstItem="xYu-F2-BfV" firstAttribute="leading" secondItem="Ts7-H1-M7w" secondAttribute="leadingMargin" constant="18" id="Ea8-Sy-XP1"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xYu-F2-BfV" secondAttribute="trailing" constant="259" id="IZJ-dw-MYX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xYu-F2-BfV" secondAttribute="bottom" constant="46.5" id="LNl-2Q-P7n"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="immagine" destination="xYu-F2-BfV" id="iFe-uH-uo0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -208,7 +227,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5r-BK-jKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="-421"/>
+            <point key="canvasLocation" x="1781.5999999999999" y="-421.43928035982015"/>
         </scene>
     </scenes>
     <resources>

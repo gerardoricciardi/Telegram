@@ -18,7 +18,7 @@ class ContactsTableViewController: UITableViewController{
     var nome = "Giorgia Liguori"
     var numero = "8726348762384"
     var searchController : UISearchController!
-    
+    var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
     let section = ["1", "2"]
     
     let items = [["profilo"], ["Invite Friends","Martina Iammarino", "Daniela Zabatta", "Fabio Dell'infante", "Gerardo ricciardi", "Toni Pagliaro"]]
@@ -105,7 +105,7 @@ class ContactsTableViewController: UITableViewController{
             else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
                 
-              
+              cell.accesso.text = accesso [indexPath.row]
                cell.contatto.text = items[indexPath.section][indexPath.row]
                cell.immagine2?.image = UIImage(named : immagini[indexPath.row])
                 

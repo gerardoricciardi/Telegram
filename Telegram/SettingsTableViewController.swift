@@ -26,10 +26,10 @@ class SettingsTableViewController: UITableViewController {
     let dati = ["Utilizzo archivio", "Utilizzo rete", "Chat Private", "Gruppi"]
     let switchDati = [false, false, true, true]
     let switchDatiHidden = [true, true, false, false]
-    let chiamate = ["Marino","Lucioni", "Vigorito", "Marino", "Marino", "Ceravolo"]
+    let chiamate = ["Fabio", "Daniela", "Martina", "Gerardo", "Toni", "Martina"]
     let switchChiamateHidden = [true, true, true, true, true, true]
     let switchChiamate = [true, true, false, false, false, false]
-    let sticker = ["Mostra scheda sticker", "Strega","A", "Gladiatore", "Tamburo", "Imbriani non mollare"]
+    let sticker = ["Mostra scheda sticker", "Strega","Curva Sud", "Borghetti", "BN", "Sciarpa"]
     let switchStickerHidden = [false, true, true, true, true, true]
     let switchSticker = [true, true, false, false, false, false]
     

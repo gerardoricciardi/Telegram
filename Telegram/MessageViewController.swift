@@ -21,7 +21,7 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.isHidden=true
+        //self.tabBarController?.tabBar.isHidden=true
         self.navigationItem.rightBarButtonItem?.image=UIImage( named : stringFoto)
         self.navigationItem.title=nomeContatto
         

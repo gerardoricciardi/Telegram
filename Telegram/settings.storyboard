@@ -193,11 +193,11 @@
             </objects>
             <point key="canvasLocation" x="1893.5999999999999" y="-180.35982008995504"/>
         </scene>
-        <!--settings-->
+        <!--Impostazioni-->
         <scene sceneID="O3m-YY-3ur">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jbh-mD-hoJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="settings" image="settings" id="vgc-VD-jwJ"/>
+                    <tabBarItem key="tabBarItem" title="Impostazioni" image="settings" id="vgc-VD-jwJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hSw-zf-G0R">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

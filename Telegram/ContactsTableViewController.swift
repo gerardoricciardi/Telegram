@@ -160,9 +160,10 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addContact"{
-            let destinationController = segue.destination as! NewContactTableViewController
-            destinationController.immagine = "user1"
-            destinationController.label = "Giorgia"
+            let destinationController = segue.destination as! NewContactViewController
+            //destinationController.immagine = "user1"
+            //destinationController.label = "Giorgia"
+            
         }
     }
 

@@ -114,7 +114,7 @@
         <!--Message View Controller-->
         <scene sceneID="SUa-bR-Hdx">
             <objects>
-                <viewController id="ROH-52-D1u" customClass="MessageViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="ROH-52-D1u" customClass="MessageViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mFs-nH-gOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +144,7 @@
                                     <barButtonItem title="Item" image="attach" id="rkw-vM-yCB"/>
                                     <barButtonItem style="plain" id="Rhx-nR-iHm">
                                         <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="mEd-Yo-yyf">
-                                            <rect key="frame" x="53" y="7" width="233" height="30"/>
+                                            <rect key="frame" x="53" y="7" width="25" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -172,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cN-6l-h7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757.5999999999999" y="-35.532233883058474"/>
+            <point key="canvasLocation" x="1676" y="-63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JOb-ba-JZ7">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0718773A1F76686C0088A411 /* Setting1RowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071877391F76686C0088A411 /* Setting1RowViewController.swift */; };
+		0767A1951F782331007F2D31 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767A1941F782331007F2D31 /* NewContactViewController.swift */; };
 		07B711681F76C70B00697D40 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B711671F76C70B00697D40 /* DetailsTableViewController.swift */; };
 		07B7116A1F76C81A00697D40 /* DetasilsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B711691F76C81A00697D40 /* DetasilsTableViewCell.swift */; };
 		07C336EC1F75614700973526 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C336EB1F75614700973526 /* SettingsTableViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		071877391F76686C0088A411 /* Setting1RowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting1RowViewController.swift; sourceTree = "<group>"; };
+		0767A1941F782331007F2D31 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
 		07B711671F76C70B00697D40 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		07B711691F76C81A00697D40 /* DetasilsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetasilsTableViewCell.swift; sourceTree = "<group>"; };
 		07C336EB1F75614700973526 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				07DD428F1F75397000244867 /* AppDelegate.swift */,
 				07DD42911F75397000244867 /* ViewController.swift */,
 				07EA00621F754A9000C18FD8 /* contatti.storyboard */,
+				0767A1941F782331007F2D31 /* NewContactViewController.swift */,
 				E6FAC9EE1F76DC18007E0203 /* NewContactsTableViewCell.swift */,
 				E6FAC9F01F76DC34007E0203 /* NewContactTableViewController.swift */,
 				E60B621E1F7678E80065CFEA /* ContactsTableViewCell2.swift */,
@@ -344,6 +347,7 @@
 				E60B621F1F7678E80065CFEA /* ContactsTableViewCell2.swift in Sources */,
 				8F55F6A61F77D3D300BA5DDB /* Contatto.swift in Sources */,
 				0718773A1F76686C0088A411 /* Setting1RowViewController.swift in Sources */,
+				0767A1951F782331007F2D31 /* NewContactViewController.swift in Sources */,
 				8F9BB0F41F75808300CD4DB2 /* TableViewControllerChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

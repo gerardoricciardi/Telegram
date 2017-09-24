@@ -133,37 +133,36 @@
         <!--Details Table View Controller-->
         <scene sceneID="jdS-R1-cFo">
             <objects>
-                <tableViewController id="3ag-xh-rKE" customClass="DetailsTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="3ag-xh-rKE" customClass="DetailsTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u3e-0F-G5g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="riga" rowHeight="60" id="oNb-d2-cPa" customClass="DetasilsTableViewCell" customModule="Telegram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="riga" rowHeight="50" id="oNb-d2-cPa" customClass="DetasilsTableViewCell" customModule="Telegram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oNb-d2-cPa" id="1UI-Sw-s9Q">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-Jl-mzL">
+                                            <rect key="frame" x="297" y="7" width="51" height="11"/>
+                                        </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-jr-B6E">
-                                            <rect key="frame" x="20" y="11" width="42" height="37"/>
+                                            <rect key="frame" x="30" y="11" width="42" height="27"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-Jl-mzL">
-                                            <rect key="frame" x="296" y="17" width="51" height="21"/>
-                                        </switch>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="12" id="2bf-w2-iy6"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="OPq-Jl-mzL" secondAttribute="trailing" constant="22" id="4m2-79-60v"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Fm8-jr-B6E" secondAttribute="bottom" constant="3.5" id="FGu-bj-l7h"/>
-                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="3" id="X8N-pi-TUY"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="OPq-Jl-mzL" secondAttribute="bottom" constant="13.5" id="eHQ-UR-6hI"/>
-                                        <constraint firstItem="OPq-Jl-mzL" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="9" id="h4q-bG-MqK"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Fm8-jr-B6E" secondAttribute="bottom" constant="3.5" id="pEi-VL-eft"/>
+                                        <constraint firstAttribute="bottom" secondItem="OPq-Jl-mzL" secondAttribute="bottom" constant="31.5" id="d8a-MV-xzr"/>
+                                        <constraint firstAttribute="trailing" secondItem="OPq-Jl-mzL" secondAttribute="trailing" constant="29" id="dUx-jb-GIk"/>
+                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="22" id="mQK-r5-8Es"/>
+                                        <constraint firstItem="OPq-Jl-mzL" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="top" constant="7" id="mtM-W9-zST"/>
+                                        <constraint firstItem="Fm8-jr-B6E" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="3" id="ugl-Ty-bv5"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Fm8-jr-B6E" secondAttribute="bottom" constant="3.5" id="vtU-eO-YZP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

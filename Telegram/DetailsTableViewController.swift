@@ -42,6 +42,9 @@ class DetailsTableViewController: UITableViewController {
         return riga.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(50)
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "riga", for: indexPath) as! DetasilsTableViewCell

@@ -45,7 +45,6 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
         if section == 1{
             grayHeader.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
             grayHeader.frame = CGRect(x: 10, y: 70, width: view.frame.width, height: 30)
-            print("header in section \(section)")
             grayHeader.isHidden = false
             
         }

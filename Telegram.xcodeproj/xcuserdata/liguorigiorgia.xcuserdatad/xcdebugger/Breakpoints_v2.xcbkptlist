@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Telegram/ContactsTableViewController.swift"
-            timestampString = "527942214.157445"
+            timestampString = "527943858.446532"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "ContactsTableViewController"
             landmarkType = "3">
          </BreakpointContent>

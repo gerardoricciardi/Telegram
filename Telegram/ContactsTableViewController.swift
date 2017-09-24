@@ -34,9 +34,8 @@ class ContactsTableViewController: UITableViewController{
         let grayHeader = UIView()
         grayHeader.isHidden = true
         if section == 1{
-            grayHeader.backgroundColor = UIColor.gray
-            grayHeader.frame = CGRect(x: 10, y: 10, width: view.frame.width, height: 5)
-            
+            grayHeader.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
+            grayHeader.frame = CGRect(x: 10, y: 70, width: view.frame.width, height: 30)
             print("header in section \(section)")
             grayHeader.isHidden = false
             
@@ -48,7 +47,7 @@ class ContactsTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = 0.0
         if section == 1{
-            height = 10
+            height = 30
             
         }
         return CGFloat(height)

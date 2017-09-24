@@ -10,7 +10,7 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
-    var imageUtente = "imageUtente"
+    var imageUtente = "gl"
     var firstNameUser = "Gerardo"
     var secondNameUser = "Ricciardi"
     

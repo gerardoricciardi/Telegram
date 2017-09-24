@@ -56,7 +56,7 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = 0.0
         if section == 1{
-            height = 30
+            height = 20
             
         }
         return CGFloat(height)

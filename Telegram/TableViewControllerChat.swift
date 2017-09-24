@@ -67,14 +67,15 @@ class TableViewControllerChat: UITableViewController,UISearchResultsUpdating {
 
         
         cell.imageStatoMessaggio?.image=UIImage(named:"messaggioLetto")
+
+        cell.imageChat?.image=UIImage(named : contatto.foto)
+        cell.imageChat.layer.cornerRadius=30.0
+        cell.imageChat.clipsToBounds=true
+        cell.nomeContatto!.text=contatto.nome
+        cell.lastMessage!.text=contatto.lastMessage
         
-        cell.imageChat?.image=UIImage(named : contatti[indexPath.row].foto)
-                cell.imageChat.layer.cornerRadius=30.0
-                cell.imageChat.clipsToBounds=true
-        cell.nomeContatto!.text=contatti[indexPath.row].nome
-        cell.lastMessage!.text=contatti[indexPath.row].lastMessage
         
-        
+      
         // Configure the cell...
 
         return cell

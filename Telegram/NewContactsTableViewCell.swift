@@ -10,8 +10,10 @@ import UIKit
 
  
 
-class NewContactsTableViewCell: UITableViewCell {
+class NewContactsTableViewCell: UITableViewCell  {
+    
 @IBOutlet weak var immagine: UIImageView!
+    @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

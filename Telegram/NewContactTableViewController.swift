@@ -11,6 +11,7 @@ import UIKit
 class NewContactTableViewController: UITableViewController {
 
     var immagine = "user1"
+    var label = "Giorgia"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +44,7 @@ class NewContactTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
   let cell = tableView.dequeueReusableCell(withIdentifier: "NewContactsCell", for: indexPath) as! NewContactsTableViewCell
-        
+        cell.label?.text = label
         cell.immagine.image = UIImage(named: immagine)
         //cell.immagine.layer.cornerRadius = 30.0
         //cell.immagine.clipsToBounds = true

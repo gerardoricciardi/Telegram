@@ -19,12 +19,12 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
     var numero = "+39 33983748"
     var searchController : UISearchController!
     var searchResult :[Contatto]!
-//    var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
+//    var accesso = [" ", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
    let section = ["1", "2"]
     
     
     
-    var contatti :[Contatto]=[Contatto(nome:"Invite Friends",foto:"add",accesso:"last seen 2 minutes ago"),
+    var contatti :[Contatto]=[Contatto(nome:"Invite Friends",foto:"add",accesso:""),
               Contatto(nome:"Martina Iammarino",foto:"user1",accesso:"last seen 2 minutes ago"),
               Contatto(nome:"Daniela Zabatta",foto:"user2",accesso:"last seen 25 minutes ago"),
               Contatto(nome:"Fabio Dell'Infante",foto:"user3",accesso:"last seen 5 minutes ago"),
@@ -45,7 +45,6 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
         if section == 1{
             grayHeader.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
             grayHeader.frame = CGRect(x: 10, y: 70, width: view.frame.width, height: 30)
-            print("header in section \(section)")
             grayHeader.isHidden = false
             
         }
@@ -56,7 +55,7 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = 0.0
         if section == 1{
-            height = 30
+            height = 20
             
         }
         return CGFloat(height)

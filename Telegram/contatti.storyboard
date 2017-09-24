@@ -207,6 +207,16 @@
                                                 <constraint firstAttribute="height" constant="80" id="xYo-hK-OaV"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ig0-nf-1dk">
+                                            <rect key="frame" x="175" y="35" width="163" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="8Kc-dd-Lbg"/>
+                                                <constraint firstAttribute="width" constant="163" id="BxH-5O-ZKK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="xYu-F2-BfV" firstAttribute="top" secondItem="Ts7-H1-M7w" secondAttribute="topMargin" constant="18" id="AEH-0a-KZg"/>

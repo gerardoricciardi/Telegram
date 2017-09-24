@@ -11,7 +11,10 @@ import UIKit
 class DetailsTableViewController: UITableViewController {
     
     
+    
     var riga: [String] = []
+    var switchRiga: [Bool] = []
+    var switchHidden: [Bool] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +47,13 @@ class DetailsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "riga", for: indexPath) as! DetasilsTableViewCell
         
         cell.label.text = riga[indexPath.row]
+        if switchHidden[indexPath.row]{
+            cell.switch.isHidden = true
+        }
+        else{
+            cell.switch.isHidden = false
+            cell.switch.isOn = switchRiga[indexPath.row]
+        }
         // Configure the cell...
 
         return cell

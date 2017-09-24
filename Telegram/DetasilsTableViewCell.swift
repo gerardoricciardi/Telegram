@@ -12,6 +12,7 @@ class DetasilsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var `switch`: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()

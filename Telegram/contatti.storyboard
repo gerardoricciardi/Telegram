@@ -48,13 +48,13 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="17Q-PR-W2Z">
                                             <rect key="frame" x="134" y="96" width="172" height="35"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NomeCognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-BX-j3C">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NomeCognome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-BX-j3C">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="JQ8-FW-MGh"/>
                                                         <constraint firstAttribute="height" constant="20.5" id="V9W-7g-5M9"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -184,7 +184,7 @@
             </objects>
             <point key="canvasLocation" x="1084" y="-421.43928035982015"/>
         </scene>
-        <!--Nuovo Contatto-->
+        <!--New Contact-->
         <scene sceneID="GmD-NN-MgS">
             <objects>
                 <tableViewController id="gLc-6D-wam" customClass="NewContactTableViewController" customModule="Telegram" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                             <outlet property="delegate" destination="gLc-6D-wam" id="B0u-du-BYH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Nuovo Contatto" id="eGJ-ej-GdA"/>
+                    <navigationItem key="navigationItem" title="New Contact" id="eGJ-ej-GdA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5r-BK-jKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

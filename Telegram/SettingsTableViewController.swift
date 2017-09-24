@@ -11,17 +11,27 @@ import UIKit
 class SettingsTableViewController: UITableViewController {
 
     var imageUtente = "gl"
-    var firstNameUser = "Gerardo"
-    var secondNameUser = "Ricciardi"
+    var firstNameUser = "Giorgia"
+    var secondNameUser = "Liguori"
     
     let section = ["1","2"]
     let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
     
     let notifiche = ["Avviso", "Anteprima messaggio", "Suono"]
+    let switchNotifiche = [true, false, false]
+    let switchNotificheHidden = [false, false, true]
     let privacy = ["Utenti Bloccati", "Ultimo accesso", "Chiamate vocali"]
+    let switchPrivacy = [false, false, false]
+    let switchPrivacyHidden = [true, true, false]
     let dati = ["Utilizzo archivio", "Utilizzo rete", "Chat Private", "Gruppi"]
+    let switchDati = [false, false, true, true]
+    let switchDatiHidden = [true, true, false, false]
     let chiamate = ["Marino","Lucioni", "Vigorito", "Marino", "Marino", "Ceravolo"]
-    let sticker = ["Strega","A", "Gladiatore", "Pecora", "Tamburo", "Imbriani non mollare"]
+    let switchChiamateHidden = [true, true, true, true, true, true]
+    let switchChiamate = [true, true, false, false, false, false]
+    let sticker = ["Mostra scheda sticker", "Strega","A", "Gladiatore", "Tamburo", "Imbriani non mollare"]
+    let switchStickerHidden = [false, true, true, true, true, true]
+    let switchSticker = [true, true, false, false, false, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +81,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = 0.0
         if section == 1{
-            height = 10
+            height = 30
         }
         return CGFloat(height)
     }
@@ -108,26 +118,40 @@ class SettingsTableViewController: UITableViewController {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = notifiche
                     destinationController.title = items[indexPath.section][indexPath.row]
+                    destinationController.switchRiga = switchNotifiche
+                    destinationController.switchHidden = switchNotificheHidden
                 }
                 if checkRow == 1 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = privacy
                     destinationController.title = items[indexPath.section][indexPath.row]
+                    destinationController.switchRiga = switchPrivacy
+                    destinationController.switchHidden = switchPrivacyHidden
+                    
                 }
                 if checkRow == 2 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = dati
                     destinationController.title = items[indexPath.section][indexPath.row]
+                    destinationController.switchRiga = switchDati
+                    destinationController.switchHidden = switchDatiHidden
+                    
                 }
                 if checkRow == 3 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = chiamate
                     destinationController.title = items[indexPath.section][indexPath.row]
+                    destinationController.switchRiga = switchChiamate
+                    destinationController.switchHidden = switchChiamateHidden
+                    
                 }
                 if checkRow == 4 {
                     let destinationController = segue.destination as! DetailsTableViewController
                     destinationController.riga = sticker
                     destinationController.title = items[indexPath.section][indexPath.row]
+                    destinationController.switchRiga = switchSticker
+                    destinationController.switchHidden = switchStickerHidden
+                    
                 }
             }
         }

@@ -11,6 +11,12 @@ import UIKit
 class MessageViewController: UIViewController {
 
     @IBOutlet var profilePhoto : UIImageView!
+    @IBOutlet var  nomeContattoLabel : UILabel!
+    @IBOutlet var  accessoLabel : UILabel!
+    
+    var nomeContatto=""
+//    var accesso=""
+    
     var stringFoto = ""
     
     override func viewDidLoad() {
@@ -18,6 +24,10 @@ class MessageViewController: UIViewController {
         profilePhoto.image=UIImage( named : stringFoto)
        profilePhoto.layer.cornerRadius=30.0
         profilePhoto.clipsToBounds=true
+        
+        nomeContattoLabel.text=nomeContatto
+        accessoLabel.text="online"
+//        accessoLabel.text=accesso
 
         // Do any additional setup after loading the view.
     }

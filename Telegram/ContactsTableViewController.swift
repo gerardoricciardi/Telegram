@@ -8,22 +8,56 @@
 
 import UIKit
 
-class ContactsTableViewController: UITableViewController {
+class ContactsTableViewController: UITableViewController{
     
+    
+    
+    var isSearching =  false
     var immagine1 = "gl"
-    var immagine2 = "user"
+    var immagini = ["add","user1","user2","user3","user4","user5","user6"]
     var nome = "Giorgia Liguori"
-    var numero = "8726348762384"
-    var contatto = "martina"
-    var accesso = "3 ore fa"
-    
+    var numero = "+39 33983748"
+    var searchController : UISearchController!
+    var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
     let section = ["1", "2"]
     
-    let items = [["profilo"], ["Martina Iammarino", "Daniela Zabatta", "Fabio Dell'infante", "Gerardo ricciardi", "Toni Pagliaro"]]
+    let items = [["profilo"], ["Invite Friends","Martina Iammarino", "Daniela Zabatta", "Fabio Dell'infante", "Gerardo ricciardi", "Toni Pagliaro"]]
+    
+    
+    
+    
+    
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        
+        let grayHeader = UIView()
+        grayHeader.isHidden = true
+        if section == 1{
+            grayHeader.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
+            grayHeader.frame = CGRect(x: 10, y: 70, width: view.frame.width, height: 30)
+            print("header in section \(section)")
+            grayHeader.isHidden = false
+            
+        }
+        return grayHeader
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height = 0.0
+        if section == 1{
+            height = 30
+            
+        }
+        return CGFloat(height)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -52,6 +86,7 @@ class ContactsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
             if indexPath.section == 0 {
+                
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell", for: indexPath) as! ContactsTableViewCell
                 cell.immagine1?.image = UIImage(named: immagine1)
                 cell.immagine1.layer.cornerRadius = 30.0
@@ -69,9 +104,9 @@ class ContactsTableViewController: UITableViewController {
             else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
                 
-                
-               // cell.contatto.text = items[indexPath.section][indexPath.row]
-                cell.immagine2?.image = UIImage (named : immagine2)
+              cell.accesso.text = accesso [indexPath.row]
+               cell.contatto.text = items[indexPath.section][indexPath.row]
+               cell.immagine2?.image = UIImage(named : immagini[indexPath.row])
                 
                 return cell
             }

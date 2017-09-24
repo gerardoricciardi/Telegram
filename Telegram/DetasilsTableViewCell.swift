@@ -1,18 +1,17 @@
 //
-//  ContactsTableViewCell2.swift
+//  DetasilsTableViewCell.swift
 //  Telegram
 //
-//  Created by Liguori Giorgia on 23/09/17.
+//  Created by Ricciardi Gerardo on 23/09/17.
 //  Copyright © 2017 Ricciardi Gerardo. All rights reserved.
 //
 
 import UIKit
 
-class ContactsTableViewCell2: UITableViewCell {
-    @IBOutlet weak var searchBar : UISearchBar!
-    @IBOutlet weak var contatto: UILabel!
-    @IBOutlet weak var accesso: UILabel!
-     @IBOutlet weak var immagine2: UIImageView!
+class DetasilsTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var label: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

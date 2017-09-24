@@ -10,21 +10,27 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
-    var imageUtente = "imageUtente"
+    var imageUtente = "gl"
     var firstNameUser = "Gerardo"
     var secondNameUser = "Ricciardi"
     
     let section = ["1","2"]
     let items = [["profilo"], ["Notifiche e suoni", "Privacy e sicurezza", "Dati e archivio", "Chiamate recenti", "Sticker"]]
     
+    let notifiche = ["Avviso", "Anteprima messaggio", "Suono"]
+    let privacy = ["Utenti Bloccati", "Ultimo accesso", "Chiamate vocali"]
+    let dati = ["Utilizzo archivio", "Utilizzo rete", "Chat Private", "Gruppi"]
+    let chiamate = ["Marino","Lucioni", "Vigorito", "Marino", "Marino", "Ceravolo"]
+    let sticker = ["Strega","A", "Gladiatore", "Pecora", "Tamburo", "Imbriani non mollare"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-/*
-        let greyHeader = UIView()
-        greyHeader.backgroundColor = UIColor.gray
-        greyHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: view.frame.height)
         
-        tableView.tableHeaderView = greyHeader
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    /*
+        if  let topItem = self.navigationController?.navigationBar.topItem {
+            topItem.backBarButtonItem = UIBarButtonItem(title: "Indietro", style: .plain, target: nil, action: nil)
+        }
  */
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -52,27 +58,20 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       
-        
         let grayHeader = UIView()
         grayHeader.isHidden = true
         if section == 1{
-            grayHeader.backgroundColor = UIColor.gray
+            grayHeader.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
             grayHeader.frame = CGRect(x: 10, y: 20, width: view.frame.width, height: 30)
-            
-            print("header in section \(section)")
             grayHeader.isHidden = false
-        
         }
         return grayHeader
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         var height = 0.0
         if section == 1{
             height = 10
-            
         }
         return CGFloat(height)
     }
@@ -104,34 +103,37 @@ class SettingsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue"{
             if let indexPath = tableView.indexPathForSelectedRow{
-                let destinationController = segue.destination as! Setting1RowViewController
-                // destinationController.restaurantName = immagini[indexPath.row]
-                //destinationController.locationName = location[indexPath.row]
-                //destinationController.typeName = type[indexPath.row]
-                destinationController.nome = "prova"
-                
-                
+                let checkRow = indexPath.row
+                if checkRow == 0 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = notifiche
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
+                if checkRow == 1 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = privacy
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
+                if checkRow == 2 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = dati
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
+                if checkRow == 3 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = chiamate
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
+                if checkRow == 4 {
+                    let destinationController = segue.destination as! DetailsTableViewController
+                    destinationController.riga = sticker
+                    destinationController.title = items[indexPath.section][indexPath.row]
+                }
             }
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-        if indexPath.section == 1{
-            
-        }
-        print("index path row \(indexPath.row)")
-        print("index path section \(indexPath.section)")
-        /*
-        
-        
-        
-        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("storyBoardIdFor your new ViewController") as SecondViewController
-        
-        self.navigationController.pushViewController(secondViewController, animated: true)
-         */
-    }
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactsTableViewController: UITableViewController{
+class ContactsTableViewController: UITableViewController, UISearchResultsUpdating{
     
     
     
@@ -18,12 +18,21 @@ class ContactsTableViewController: UITableViewController{
     var nome = "Giorgia Liguori"
     var numero = "+39 33983748"
     var searchController : UISearchController!
-    var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
-    let section = ["1", "2"]
+    var searchResult :[Contatto]!
+//    var accesso = ["","last seen 2 minutes ago", "last seen 25 minutes ago"," last seen 5 minutes ago", "last seen 15 minutes ago","last seen 35 minutes ago"]
+   let section = ["1", "2"]
+    
+    
+    
+    var contatti :[Contatto]=[Contatto(nome:"Invite Friends",foto:"add",accesso:"last seen 2 minutes ago"),
+              Contatto(nome:"Martina Iammarino",foto:"user1",accesso:"last seen 2 minutes ago"),
+              Contatto(nome:"Daniela Zabatta",foto:"user2",accesso:"last seen 25 minutes ago"),
+              Contatto(nome:"Fabio Dell'Infante",foto:"user3",accesso:"last seen 5 minutes ago"),
+              Contatto(nome:"Gerardo Ricciardi",foto:"user4",accesso:"last seen 2 minutes ago"),
+              Contatto(nome:"Toni Pagliaro",foto:"user5",accesso:"last seen 21 minutes ago"),
+              ]
     
     let items = [["profilo"], ["Invite Friends","Martina Iammarino", "Daniela Zabatta", "Fabio Dell'infante", "Gerardo ricciardi", "Toni Pagliaro"]]
-    
-    
     
     
     
@@ -63,6 +72,13 @@ class ContactsTableViewController: UITableViewController{
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        searchController=UISearchController(searchResultsController: nil)
+        
+        tableView.tableHeaderView=searchController.searchBar
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation=false
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,8 +95,13 @@ class ContactsTableViewController: UITableViewController{
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if(searchController.isActive){
+            return searchResult.count
+        }else{
+            
         
         return self.items[section].count
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,14 +125,40 @@ class ContactsTableViewController: UITableViewController{
             else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCell2", for: indexPath) as! ContactsTableViewCell2
                 
-              cell.accesso.text = accesso [indexPath.row]
-               cell.contatto.text = items[indexPath.section][indexPath.row]
-               cell.immagine2?.image = UIImage(named : immagini[indexPath.row])
+                let contatto=(searchController.isActive) ?
+                searchResult[indexPath.row] : contatti[indexPath.row]
+
+                cell.accesso!.text=contatto.accesso
+            cell.contatto!.text=contatto.nome
+                cell.immagine2?.image=UIImage(named :contatto.foto)
                 
+//              cell.accesso.text = accesso [indexPath.row]
+//               cell.contatto.text = items[indexPath.section][indexPath.row]
+//               cell.immagine2?.image = UIImage(named : immagini[indexPath.row])
+//                
                 return cell
             }
         }
 
+    
+    func filterContent(for searchText: String){
+        //        la funzione filter riceve come input una funzione da usare per implementare un filtro
+        searchResult=contatti.filter({ (contatto)->Bool in
+            if let name=contatto.nome{
+                let isMatch = name.localizedCaseInsensitiveContains(searchText)
+                return isMatch
+            }
+            return false
+        })
+    }
+    
+    func updateSearchResults(for searchController : UISearchController){
+        if let searchText=searchController.searchBar.text{
+            filterContent(for: searchText)
+            tableView.reloadData()
+        }
+    }
+    
 
 
 

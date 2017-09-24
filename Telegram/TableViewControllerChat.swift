@@ -8,18 +8,33 @@
 
 import UIKit
 
-class TableViewControllerChat: UITableViewController {
+class TableViewControllerChat: UITableViewController,UISearchResultsUpdating {
 
     var chat:[String]=["chat1","chat2","chat3"]
     
+    var contatti:[Contatto]=[Contatto(nome:"Scarlett",lastMessage:"ciao",foto:"sj"),Contatto(nome:"Alex",lastMessage:"ci vediamo dopo",foto:"alex"),Contatto(nome:"Jon",lastMessage:"sto in palestra",foto:"jon")]
+    var searchResult :[Contatto]!
+    var searchController : UISearchController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        searchController=UISearchController(searchResultsController: nil)
+        
+        tableView.tableHeaderView=searchController.searchBar
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation=false
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,22 +50,32 @@ class TableViewControllerChat: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return chat.count
+        if(searchController.isActive){
+            return searchResult.count
+        }else{
+            
+            return chat.count
+        }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellChat", for: indexPath) as! TableViewCellChat
         
+        let contatto=(searchController.isActive) ?
+            searchResult[indexPath.row] : contatti[indexPath.row]
+
+        
         cell.imageStatoMessaggio?.image=UIImage(named:"messaggioLetto")
+
+        cell.imageChat?.image=UIImage(named : contatto.foto)
+        cell.imageChat.layer.cornerRadius=30.0
+        cell.imageChat.clipsToBounds=true
+        cell.nomeContatto!.text=contatto.nome
+        cell.lastMessage!.text=contatto.lastMessage
         
-        cell.imageChat?.image=UIImage(named : "sj")
-                cell.imageChat.layer.cornerRadius=30.0
-                cell.imageChat.clipsToBounds=true
         
-        
-        
+      
         // Configure the cell...
 
         return cell
@@ -68,7 +93,25 @@ class TableViewControllerChat: UITableViewController {
         }
     }
  
-
+    func filterContent(for searchText: String){
+        //        la funzione filter riceve come input una funzione da usare per implementare un filtro
+        searchResult=contatti.filter({ (contatto)->Bool in
+            if let name=contatto.nome{
+                let isMatch = name.localizedCaseInsensitiveContains(searchText)
+                return isMatch
+            }
+            return false
+        })
+    }
+    
+    func updateSearchResults(for searchController : UISearchController){
+        if let searchText=searchController.searchBar.text{
+            filterContent(for: searchText)
+            tableView.reloadData()
+        }
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

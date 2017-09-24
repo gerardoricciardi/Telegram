@@ -162,7 +162,7 @@ class ContactsTableViewController: UITableViewController, UISearchResultsUpdatin
         if segue.identifier == "addContact"{
             let destinationController = segue.destination as! NewContactTableViewController
             destinationController.immagine = "user1"
-            destinationController.label = "Giorgia"
+            destinationController.label = "Nome"
         }
     }
 

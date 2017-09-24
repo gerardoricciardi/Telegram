@@ -21,12 +21,16 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilePhoto.image=UIImage( named : stringFoto)
+        self.tabBarController?.tabBar.isHidden=true
+        self.navigationItem.rightBarButtonItem?.image=UIImage( named : stringFoto)
+        self.navigationItem.title=nomeContatto
+        
+//        profilePhoto.image=UIImage( named : stringFoto)
        profilePhoto.layer.cornerRadius=30.0
         profilePhoto.clipsToBounds=true
         
-        nomeContattoLabel.text=nomeContatto
-        accessoLabel.text="online"
+//        nomeContattoLabel.text=nomeContatto
+//        accessoLabel.text="online"
 //        accessoLabel.text=accesso
 
         // Do any additional setup after loading the view.
@@ -36,6 +40,8 @@ class MessageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*

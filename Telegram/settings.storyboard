@@ -155,18 +155,28 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-75-tcj">
+                                            <rect key="frame" x="322.5" y="12" width="15.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fsl-75-tcj" secondAttribute="bottom" constant="8.5" id="WiB-Qn-9gc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fsl-75-tcj" secondAttribute="trailing" constant="29" id="ZJ4-Bu-Gxw"/>
                                         <constraint firstAttribute="bottom" secondItem="OPq-Jl-mzL" secondAttribute="bottom" constant="31.5" id="d8a-MV-xzr"/>
                                         <constraint firstAttribute="trailing" secondItem="OPq-Jl-mzL" secondAttribute="trailing" constant="29" id="dUx-jb-GIk"/>
                                         <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="22" id="mQK-r5-8Es"/>
                                         <constraint firstItem="OPq-Jl-mzL" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="top" constant="7" id="mtM-W9-zST"/>
                                         <constraint firstItem="Fm8-jr-B6E" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="3" id="ugl-Ty-bv5"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Fm8-jr-B6E" secondAttribute="bottom" constant="3.5" id="vtU-eO-YZP"/>
+                                        <constraint firstItem="fsl-75-tcj" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="topMargin" constant="4" id="yv0-YF-x6n"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="Fm8-jr-B6E" id="AMx-kz-Utp"/>
+                                    <outlet property="labelArrow" destination="fsl-75-tcj" id="VGM-3M-US6"/>
                                     <outlet property="switch" destination="OPq-Jl-mzL" id="qRW-zo-x2D"/>
                                 </connections>
                             </tableViewCell>
@@ -176,10 +186,12 @@
                             <outlet property="delegate" destination="3ag-xh-rKE" id="Bsc-Ds-gJH"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqk-oW-NA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-180"/>
+            <point key="canvasLocation" x="1893.5999999999999" y="-180.35982008995504"/>
         </scene>
         <!--settings-->
         <scene sceneID="O3m-YY-3ur">

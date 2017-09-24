@@ -48,17 +48,19 @@ class DetailsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "riga", for: indexPath) as! DetasilsTableViewCell
-        
+        cell.selectionStyle  = UITableViewCellSelectionStyle.none
         cell.label.text = riga[indexPath.row]
         if switchHidden[indexPath.row]{
             cell.switch.isHidden = true
+            cell.labelArrow.isHidden = false
         }
         else{
             cell.switch.isHidden = false
             cell.switch.isOn = switchRiga[indexPath.row]
+            cell.labelArrow.isHidden = true
         }
         // Configure the cell...
-
+        
         return cell
     }
     

@@ -10,6 +10,7 @@ import UIKit
 
 class DetasilsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelArrow: UILabel!
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var `switch`: UISwitch!

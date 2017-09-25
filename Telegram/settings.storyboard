@@ -147,7 +147,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-Jl-mzL">
-                                            <rect key="frame" x="297" y="7" width="51" height="11"/>
+                                            <rect key="frame" x="297" y="7" width="51" height="32.5"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-jr-B6E">
                                             <rect key="frame" x="30" y="11" width="42" height="27"/>
@@ -165,7 +165,7 @@
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="fsl-75-tcj" secondAttribute="bottom" constant="8.5" id="WiB-Qn-9gc"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fsl-75-tcj" secondAttribute="trailing" constant="29" id="ZJ4-Bu-Gxw"/>
-                                        <constraint firstAttribute="bottom" secondItem="OPq-Jl-mzL" secondAttribute="bottom" constant="31.5" id="d8a-MV-xzr"/>
+                                        <constraint firstAttribute="bottom" secondItem="OPq-Jl-mzL" secondAttribute="bottom" constant="10" id="d8a-MV-xzr"/>
                                         <constraint firstAttribute="trailing" secondItem="OPq-Jl-mzL" secondAttribute="trailing" constant="29" id="dUx-jb-GIk"/>
                                         <constraint firstItem="Fm8-jr-B6E" firstAttribute="leading" secondItem="1UI-Sw-s9Q" secondAttribute="leadingMargin" constant="22" id="mQK-r5-8Es"/>
                                         <constraint firstItem="OPq-Jl-mzL" firstAttribute="top" secondItem="1UI-Sw-s9Q" secondAttribute="top" constant="7" id="mtM-W9-zST"/>
